@@ -1,0 +1,654 @@
+,attributedConversions14d,attributedConversions14dSameSKU,attributedSales14d,attributedSales14dSameSKU,campaignId,campaignName,clicks,cost,impressions,keywordId,keywordText,matchType
+0,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,23,144140779717242023,6 iphone charger cable,EXACT
+1,0,0,0.0,0.0,144128619076132074,Lightning headline,3,3.96,222,144392756480871294,6ft iphone charger,EXACT
+2,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,12,144198335389504662,apple approved charging cords,EXACT
+3,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,188,144185708101184558,apple cable,EXACT
+4,0,0,0.0,0.0,144128619076132074,Lightning headline,1,0.4,30,144303495219522047,apple certified charging cable,EXACT
+5,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,3,3.9699999999999998,348,144257777046989956,apple certified lightning cable,EXACT
+6,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,1,0.8,153,144257678758875151,apple charger,EXACT
+7,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,2,2.76,209,144348567587590533,apple charger cord,EXACT
+8,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,155,144325381085777502,apple chargers for iphone,EXACT
+9,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,30,144195071160138853,apple chargers for iphone,EXACT
+10,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,46,144134877219543792,apple charging cable 6ft,EXACT
+11,1,1,25.99,25.99,144128619076132074,Lightning headline,18,24.64,1567,144142441752059469,apple charging cables,EXACT
+12,0,0,0.0,0.0,144128619076132074,Lightning headline,1,1.11,52,144123588698316376,apple charging cord,EXACT
+13,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,3,144129977829586763,apple cord 6ft,EXACT
+14,0,0,0.0,0.0,144128619076132074,Lightning headline,1,2.0,44,144360424345551062,apple iphone 8 charger,EXACT
+15,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,1,0.5700000000000001,191,144274232924485776,apple iphone charger,EXACT
+16,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,20,144233209425626626,apple iphone charger,EXACT
+17,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,10,144355653712070573,apple iphone x charger,EXACT
+18,0,0,0.0,0.0,144128619076132074,Lightning headline,2,1.43,43,144287802486110477,apple mfi certified lightning cable,EXACT
+19,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,1,1.08,237,144276583142916508,apple phone charger cord,EXACT
+20,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,18,144288567084897952,apple phone charger cord 6ft,EXACT
+21,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,1,144189545867350736,best type c cable,BROAD
+22,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,117,144226807768137003,braided lightning cable,EXACT
+23,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,10,144341105140330161,braided type c cable,BROAD
+24,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,87,144317178098446836,braided usb c cable,BROAD
+25,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,6,5.68,143,144270946787951870,certified iphone charger cable,EXACT
+26,0,0,0.0,0.0,144128619076132074,Lightning headline,2,3.95,230,144123586699624086,charger for iphone 6,EXACT
+27,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,13,144371528424324830,charger for iphone 7 plus,EXACT
+28,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,12,144297433266854902,charger for samsung tablet,EXACT
+29,0,0,0.0,0.0,144234234208353843,Micro USB Headline,1,0.73,192,144201205985436434,chargers for androids,EXACT
+30,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,102,144162516603094678,chargers iphone,EXACT
+31,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,2,144233415487616423,colors type c cable,BROAD
+32,0,0,0.0,0.0,144218053269835734,Type C headline,1,0.92,15,144305328854735872,durable usb c cable,BROAD
+33,0,0,0.0,0.0,144218053269835734,Type C headline,1,0.99,155,144168152208383777,fast charger type c cable,BROAD
+34,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,1,144357347684605717,fast charger usb c cable,BROAD
+35,0,0,0.0,0.0,144218053269835734,Type C headline,2,2.95,748,144391040208148876,fast charging usb c cable,BROAD
+36,0,0,0.0,0.0,144218053269835734,Type C headline,1,0.53,459,144162475013059936,galaxy s9 charger,EXACT
+37,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,20,144180259506340183,heavy duty type c cable,BROAD
+38,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,4,144303575931780861,heavy duty usb c cable,BROAD
+39,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,13,144366630106216332,high quality usb c cable,BROAD
+40,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,2,144369055897378596,indestructible type c cable,BROAD
+41,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,17,144185686949644944,ipad chargers apple certified,EXACT
+42,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,13,144252404739116871,ipad cord,EXACT
+43,1,1,17.99,17.99,144387653378870452,Lightning Headline 1 Pack,2,2.36,428,144122848708133228,iphone 6 charger,EXACT
+44,0,0,0.0,0.0,144128619076132074,Lightning headline,1,1.12,93,144281132920638396,iphone 6 plus charger,EXACT
+45,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,311,144138358840732298,iphone 7 charger,EXACT
+46,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,6,6.63,772,144220083699881246,iphone 7 charger,EXACT
+47,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,8,144129556820047734,iphone 7 charger 6ft,EXACT
+48,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,19,144130263553149483,iphone 7 plus charger,EXACT
+49,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,3,1.05,924,144304006435039504,iphone cable,EXACT
+50,0,0,0.0,0.0,144128619076132074,Lightning headline,3,1.4,157,144230153415306117,iphone cable 6ft,EXACT
+51,3,2,119.95,35.98,144387653378870452,Lightning Headline 1 Pack,41,19.16,4947,144362991174256264,iphone charger,EXACT
+52,1,1,17.99,17.99,144387653378870452,Lightning Headline 1 Pack,1,1.74,545,144259717114172311,iphone charger 6ft,EXACT
+53,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,87,144172132824898230,iphone charger 6ft apple certified,EXACT
+54,0,0,0.0,0.0,144128619076132074,Lightning headline,14,10.27,1105,144250745135364018,iphone charger apple certified,BROAD
+55,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,382,144346759151292181,iphone charger apple certified,EXACT
+56,0,0,0.0,0.0,144128619076132074,Lightning headline,1,0.6000000000000001,55,144220328017917536,iphone charging cable 6ft,EXACT
+57,0,0,0.0,0.0,144128619076132074,Lightning headline,6,5.14,927,144252657373403628,iphone cords,EXACT
+58,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,1,0.55,70,144351600066337466,iphone fast charger,EXACT
+59,0,0,0.0,0.0,144128619076132074,Lightning headline,7,3.75,190,144236387106351498,iphone lightning cable certified,EXACT
+60,2,1,45.98,27.99,144363125977934804,Lightning Headline 2 Pack,5,5.26,632,144150584679741697,iphone x charger,EXACT
+61,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,1,0.8200000000000001,114,144159816912708097,iphone x charger,EXACT
+62,0,0,0.0,0.0,144128619076132074,Lightning headline,2,2.15,129,144395480627704028,iphone x charger cable,EXACT
+63,0,0,0.0,0.0,144128619076132074,Lightning headline,1,0.98,36,144122627860457701,iphone xr cable,EXACT
+64,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,2,2.7800000000000002,148,144291548864264693,iphone xs charger,EXACT
+65,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,1,1.23,172,144295557279304396,iphone xs max charger,EXACT
+66,0,0,0.0,0.0,144128619076132074,Lightning headline,1,0.4,33,144355729314786119,iphone xs max chargers,EXACT
+67,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,11,144165034554573775,kindle cable,EXACT
+68,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,26,144116802001763922,kindle charging cable,EXACT
+69,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,25,144312122021882817,kindle charging cord replacement,EXACT
+70,0,0,0.0,0.0,144234234208353843,Micro USB Headline,5,2.29,188,144273266028444436,lg charger,EXACT
+71,0,0,0.0,0.0,144218053269835734,Type C headline,4,3.81,77,144342914624039324,lg v30 charger,EXACT
+72,0,0,0.0,0.0,144128619076132074,Lightning headline,4,2.65,102,144351503928344405,lightening cords,EXACT
+73,1,1,50.97,50.97,144387653378870452,Lightning Headline 1 Pack,7,11.17,328,144385904941327187,lightening cords apple certified,EXACT
+74,3,3,72.97,72.97,144128619076132074,Lightning headline,38,18.45,4782,144359559778223879,lightning cable,EXACT
+75,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,7,3.74,1434,144123169462144152,lightning cable,EXACT
+76,0,0,0.0,0.0,144128619076132074,Lightning headline,3,1.99,70,144122314750786876,lightning cable for iphone,EXACT
+77,0,0,0.0,0.0,144128619076132074,Lightning headline,1,0.35000000000000003,100,144250016433244815,lightning cords,EXACT
+78,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,1,1.0,105,144338948894372489,long iphone charger,EXACT
+79,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,1,0.62,101,144370555436062367,mfi certified lightning cable,EXACT
+80,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,95,144163948986920628,note 8 charger,EXACT
+81,0,0,0.0,0.0,144218053269835734,Type C headline,1,0.98,15,144187923796418791,nylon braided type c cable,BROAD
+82,0,0,0.0,0.0,144218053269835734,Type C headline,1,0.6900000000000001,47,144263407982160114,nylon braided usb c cable,BROAD
+83,0,0,0.0,0.0,144128619076132074,Lightning headline,2,1.24,295,144244734754999682,phone charger cord,EXACT
+84,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,1,0.52,405,144318422294561702,phone charger iphone,EXACT
+85,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,16,144353057076521056,premium usb c cable,BROAD
+86,0,0,0.0,0.0,144234234208353843,Micro USB Headline,2,1.29,1224,144214907629204645,samsung charger,EXACT
+87,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,92,144178594206593001,samsung tablet charger,EXACT
+88,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,8,144228472365613560,samsung tablet charging cable,EXACT
+89,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,4,144220574568406437,strong usb c cable,BROAD
+90,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,2,144246537907286800,tough usb c cable,BROAD
+91,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,25,144232032131843311,type c cable 2 pack,BROAD
+92,0,0,0.0,0.0,144218053269835734,Type C headline,1,0.97,55,144240580393794204,type c cable 6ft,BROAD
+93,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,8,144340806695362204,unbreakable type c cable,BROAD
+94,0,0,0.0,0.0,144218053269835734,Type C headline,1,1.09,29,144241419060454469,usb c cable 6 ft,BROAD
+95,0,0,0.0,0.0,144218053269835734,Type C headline,2,2.96,103,144117507799729013,usb type c cable 2 pack,BROAD
+96,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,1,144126531736301990,usb type c cord 6ft,BROAD
+97,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144205454646656034,mfi certified type c cable,BROAD
+98,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144346614157036502,iphone 7 charger cord 6ft,EXACT
+99,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144365119768418309,note 8 cord fast charging,EXACT
+100,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144244658131875209,portable iphone 8 charger,EXACT
+101,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144282423271261393,high quality type c cable,BROAD
+102,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144390927740780401,rapid charger iphone x,EXACT
+103,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144323765844078716,phone charger iphone 6ft,EXACT
+104,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144155845388226408,apple charger cable,BROAD
+105,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144195877925022731,usb type c cable 6ft,BROAD
+106,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144159837870066492,iphone charger cable certified,EXACT
+107,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144298798282096445,lightning cable,EXACT
+108,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144382845670939362,small portable charger,BROAD
+109,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144279951780313073,type c cable fast charging,BROAD
+110,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144165538755990230,apple certified phone charger,EXACT
+111,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144143278578149836,braided charger cord for iphone x,EXACT
+112,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144301516140092480,color iphone x charger,EXACT
+113,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144301058663795169,colored type c cable,BROAD
+114,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144369403708924461,certified apple charger 6ft,EXACT
+115,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144314563271511853,lightening cord,EXACT
+116,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144234140105714004,apple 6+ phone charging cord,EXACT
+117,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144373865756854621,apple iphone 8 charger,EXACT
+118,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144395954805002563,lightning cable durable,EXACT
+119,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144172231957820751,braided lightning cable,EXACT
+120,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144194878303401374,high speed usb c cable,BROAD
+121,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144211023539521729,usb type c cord 2 pack,BROAD
+122,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144285439715171500,usc charger cable fast charge,EXACT
+123,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144268972788788475,iphone xs max charger,EXACT
+124,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144290534537967672,iphone cable nylon braided,EXACT
+125,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144269428601079968,galaxy s7 6 ft charger cable,EXACT
+126,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144252352548153000,iphone charger 6,EXACT
+127,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144382646163064345,portable charger women,BROAD
+128,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144122387976694098,apple iphone quick charger,EXACT
+129,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144280053874942539,iphone charging cable,PHRASE
+130,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144181827697740791,lightning to usb-a braided cable 6ft,EXACT
+131,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144161324117005891,apple iphone charger cable apple certified,EXACT
+132,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144364778156519324,iphone 7 plus cable fast charging,EXACT
+133,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144371295367304119,usb type c cord 6 ft,BROAD
+134,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144363605455577793,apple cable charger 6 foot,EXACT
+135,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144197209103819956,ultra compact portable charger,BROAD
+136,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144366952282400552,ultra compact power bank,BROAD
+137,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144115347425640352,double braided lightning cable,EXACT
+138,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144165902355168812,usb c cable 6foot,BROAD
+139,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144305599945614700,iphone super fast charger,EXACT
+140,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144138359807067365,iphone 7 charger 6ft,EXACT
+141,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144266207305090069,iphone super fast charger,EXACT
+142,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144139533616834551,premium type c cable,BROAD
+143,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144199926579813482,iphone charger cord,BROAD
+144,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144231775346309822,pocket sized battery pack,EXACT
+145,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144246648367105792,phone battery charger portable,EXACT
+146,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144385202938715907,samsung kindle charger,EXACT
+147,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144204996949917536,colorful type c cable,BROAD
+148,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144240638350610547,iphone charger cable 6ft,EXACT
+149,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144383620199801680,ipad chargers apple certified,EXACT
+150,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144298962765574718,iphone charger braided cords,EXACT
+151,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144336790429817800,iphone 6s plus charger cable,EXACT
+152,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144382224595936493,lg g6 fast charging cable,EXACT
+153,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144163912572089207,lightening cable,EXACT
+154,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144314027109376269,phone charger for apple 7,EXACT
+155,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144175200446755972,iphone 6 charging cable 6ft,EXACT
+156,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144372944943229896,type c cord 6feet,BROAD
+157,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144364617493829341,leather iphone x case,EXACT
+158,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144126309017659198,apple certified charging cable,EXACT
+159,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144119058296365014,6ft apple lightning cable,EXACT
+160,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144315072675744939,tough type c cable,BROAD
+161,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144202778074299047,certified apple charger cable,EXACT
+162,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144281121783653160,iphone lightning cable certified 6ft,EXACT
+163,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144308820134586107,iphone 6s plus charger cable,BROAD
+164,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144119340619376349,apple mfi certified lightning cable,EXACT
+165,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144194764955851822,lightning to usb-a braided cable 6ft,EXACT
+166,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144169333793410205,apple iphone xs charger cable,EXACT
+167,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144310705925723402,apple iphone x leather case,EXACT
+168,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144267385420513944,pocket size power bank,BROAD
+169,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144230543951646073,apple charger for iphone 7 plus,EXACT
+170,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144345261731021242,iphone 7 charger cord 6ft,EXACT
+171,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144322658866462192,durable type c cable,BROAD
+172,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144218323807366458,iphone 7 plus cable fast charging,EXACT
+173,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144195341136834313,iphone 8 charger cable,BROAD
+174,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144333495757863341,portable charger girl,BROAD
+175,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144155477350834115,apple charging cables,EXACT
+176,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144338143538897398,rapid charger iphone x,EXACT
+177,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144182051859790855,portable charger for iphone,PHRASE
+178,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144375767106744874,long apple cord,PHRASE
+179,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144140970766184625,apple charger 6ft,EXACT
+180,0,0,0.0,0.0,144377512899327545,Lightning 2 Pack Headline,0,0.0,0,144344010627833995,certified lightning cable,BROAD
+181,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144170794220418578,usb type c cord 6 feet,BROAD
+182,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144360221064191773,braided iphone cable,PHRASE
+183,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144120507242447147,certified iphone cord,BROAD
+184,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144342334410521036,iphone charger cable,EXACT
+185,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144368134871275803,certified apple charging cable,BROAD
+186,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144358106574347045,portable iphone charger,EXACT
+187,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144360593870299650,best usb c cable,BROAD
+188,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144196718401559980,replacement lightning cable,EXACT
+189,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144132692784108211,6 feet iphone charger cable griffin,EXACT
+190,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144133536119098261,guaranteed type c cable,BROAD
+191,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144358797254995077,charger for iphone 7,EXACT
+192,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144360420975457854,charger for iphone 6,EXACT
+193,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144248067841628527,portable charger iphone 6s plus,EXACT
+194,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144227540375946739,portable charger iphone 8 plus,EXACT
+195,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144355679909030810,color iphone x charger,EXACT
+196,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144303737680132250,portable phone charger iphone 7,EXACT
+197,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144204354094713801,portable phone charger iphone 8,EXACT
+198,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144240052547093246,iphone 6 charging cable 6ft,EXACT
+199,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144348954597012274,charger cord iphone 6,EXACT
+200,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144301551053595216,portable phone charger iphone 6,EXACT
+201,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144213489613128778,braided iphone cord,EXACT
+202,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144349689425921615,nexus 6 charging cable,EXACT
+203,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144262455094405020,iphone 7 plus portable charger,EXACT
+204,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144158998756848732,iphone xr charger,EXACT
+205,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144345069572493972,apple iphone x charger cable apple certified,EXACT
+206,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144196395703831761,charger for kindle fire,EXACT
+207,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144268069687474324,portable charger,EXACT
+208,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144327767695172129,charger for iphone 7,EXACT
+209,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144270475192225802,6ft iphone charger colorful,EXACT
+210,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144396403368637480,galaxy s9 plus charging cable 6ft,EXACT
+211,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144216785223510588,iphone 6s charger cable,BROAD
+212,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144133566500502622,certified apple charger cord,EXACT
+213,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144289768664638835,usb c cord 6foot,BROAD
+214,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144353495200160540,iphone charger,BROAD
+215,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144258419437041270,colored portable charger,BROAD
+216,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144345357843160016,fast charging cord for iphone,EXACT
+217,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144371013225190468,iphone 7 plus charger,EXACT
+218,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144367786233722742,iphone lightning cable certified 6ft,EXACT
+219,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144252987085828769,6ft nylon iphone charger,EXACT
+220,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144316184623185359,iphone charging cord apple certified,EXACT
+221,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144255930408672398,military grade usb c cable,BROAD
+222,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144296986058745896,usb type c cable 2pack,BROAD
+223,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144175535131068262,big charger for iphone xr,EXACT
+224,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144124317752398753,usb c cable 2pack,BROAD
+225,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144274457093389243,certified apple ipad 6 ft charging cable,EXACT
+226,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144226225078710117,iphone 8 portable charger,EXACT
+227,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144264439734373102,iphone 6s plus portable charger,EXACT
+228,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144302673258161004,iphone charger cable certified,EXACT
+229,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144261970770171921,usb c cable 2 pack,EXACT
+230,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144396140506496610,certified apple cable 6ft,EXACT
+231,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144162703276986700,lipstick portable charger,EXACT
+232,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144318713564556832,iphone charger 6ft apple certified,EXACT
+233,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144353945172791823,6 ft iphone s max cable,EXACT
+234,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144261610287510786,6ft nylon iphone charger,EXACT
+235,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144172240502343552,high speed type c cable,BROAD
+236,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144218634904351177,rapid usb c cable,BROAD
+237,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144256548927732360,usb c cord 6 ft,BROAD
+238,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144330588335655838,certified lightning cable,BROAD
+239,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144285695922904306,travel portable charger,BROAD
+240,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144394047428456585,type c cable 6feet,BROAD
+241,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144362402455427303,apple iphone cord 6ft,EXACT
+242,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144193422986553561,lightning cable 6ft,EXACT
+243,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144386640764838756,iphone 7 mint green charger,EXACT
+244,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144305946577007081,6 foot type c cable fast charging,EXACT
+245,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144134728777419948,portable charger flashlight,BROAD
+246,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144193646871682743,max xs apple charger,EXACT
+247,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144321222539664590,charging cable iphone x 6ft,EXACT
+248,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144306835056044188,type c cord 2 pack,BROAD
+249,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144255212263659030,iphone 6 plus charger cable,BROAD
+250,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144258360716639894,iphone charger apple certified,EXACT
+251,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144375055033542891,type c cable 6 foot,BROAD
+252,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144373481716630487,samsung galaxy note charger,EXACT
+253,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144260158617466283,iphone 7 cord,EXACT
+254,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144207994045231644,phone cord for apple iphone,EXACT
+255,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144297448689587148,portable iphone x charger,EXACT
+256,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144339977658951937,duracell iphone 6 charger,EXACT
+257,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144332477859592177,certified apple cord,EXACT
+258,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144283622111199918,iphone charger braided 3ft single,EXACT
+259,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144213162490979128,portable phone charger iphone,EXACT
+260,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144359819439113654,samsung tablet cable,EXACT
+261,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144386866621946073,iphone charging cord apple certified,EXACT
+262,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144120997471177780,iphone x extended charger,EXACT
+263,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144357526978568046,charge cord iphone,PHRASE
+264,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144122026709236158,long iphone charger,PHRASE
+265,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144212319185767718,iphone x portable charger,EXACT
+266,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144192069634672227,phone charger cord,EXACT
+267,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144308830667837244,small portable charger,EXACT
+268,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144393084672080098,micro usb charging cable,EXACT
+269,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144373987416739211,iphone 7 charger cable,BROAD
+270,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144160861701229677,charger cord iphone 6,EXACT
+271,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144386136855217502,fast charging cord for iphone,EXACT
+272,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144380543102121456,long braided apple charger,EXACT
+273,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144117578857159642,certified iphone xr charger cable,EXACT
+274,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144358305095912306,apple iphone cable,BROAD
+275,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144185679915019919,usb c cable 6 feet,BROAD
+276,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144302945033256321,long iphone cord,PHRASE
+277,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144254628895606579,fast charger for samsung galaxy 9,EXACT
+278,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144137359470274363,portable iphone 7 charger,EXACT
+279,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144150655316716874,gift portable charger,PHRASE
+280,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144391021970582789,apple iphone xs charger cable,EXACT
+281,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144165708046172132,apple mfi certified lightning cable 6ft,EXACT
+282,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144133592785373511,apple charging cable 6ft,EXACT
+283,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144315351032034870,pocket charger iphone,BROAD
+284,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144336827578925792,apple charger cable 6ft,EXACT
+285,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144272643201794338,apple charging cord,BROAD
+286,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144194315673348751,apple iphone charger cable apple certified,EXACT
+287,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144187071053533808,leather phone case iphone x,EXACT
+288,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144141269195281616,portable charger women,BROAD
+289,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144363829545147794,charger cable for kindle fire,EXACT
+290,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144206396269510376,smallest portable charger,BROAD
+291,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144320011600943478,certified apple ipad 6 ft charging cable,EXACT
+292,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144161130570899169,iphone 7 plus braided charger,EXACT
+293,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144269599886200126,rapid charger for iphone 6,EXACT
+294,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144174258275790321,fast charger for iphone x,EXACT
+295,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144221367819286824,charging cable iphone xr,EXACT
+296,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144129575719455422,tablet charger,EXACT
+297,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144147489868644087,iphone portable charger,EXACT
+298,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144163771697730761,iphone 7 long charging cord,EXACT
+299,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144310367414621633,ipad charger cable,BROAD
+300,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144208271512284285,iphone charger braided 3ft single,EXACT
+301,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144210950568433154,usb c cord 6ft,BROAD
+302,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144260021763204424,s9 plus charger cable fast charging,EXACT
+303,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144284340719715771,usb type c cable 6foot,BROAD
+304,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144344916755374809,unbreakable usb c cable,BROAD
+305,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144259069017540470,type c cord 6ft,BROAD
+306,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144374106656299778,usb charger cable,EXACT
+307,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144276723532880079,apple charger 6ft,EXACT
+308,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144182118418734376,iphone x charger cable,EXACT
+309,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144334645706451546,iphone 10 charger cable,BROAD
+310,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144340635538659990,portablee charger,EXACT
+311,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144331474212017379,type c cable 6 ft,BROAD
+312,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144223153900461874,iphone charging cable 6ft,EXACT
+313,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144139405036795748,iphone 6 phone 6ft charger,EXACT
+314,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144213608349143711,kevlar tablet charger,EXACT
+315,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144229694325431807,usb c cord 2pack,BROAD
+316,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144264002973305267,portable iphone 6 charger,EXACT
+317,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144212259784416339,lightning cable iphone,EXACT
+318,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144194635474245932,kindle charger cable,EXACT
+319,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144386008108023469,iphone charger 7 plus,EXACT
+320,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144144265049677581,apple lightning cable mfi certified,EXACT
+321,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144153979762729242,iphone 7 cord,EXACT
+322,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144307531737439168,ipad charging cord,BROAD
+323,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144187221110312580,iphone cord 6 feet,EXACT
+324,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144247081294735065,iphone 6 plus charger,EXACT
+325,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144308312287146342,iphone charger 6 foot,EXACT
+326,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144341659937111154,lifetime warranty type c cable,BROAD
+327,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144118538389285551,6ft iphone cord apple,EXACT
+328,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144128443923425644,lifetime warranty usb c cable,BROAD
+329,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144394138371116422,iphone 7 portable charger,EXACT
+330,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144294656648203762,iphone 8 plus charger cable,BROAD
+331,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144215238570842034,iphone charger apple,EXACT
+332,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144346709231593361,s8 plus chargers,EXACT
+333,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144136539776536847,guaranteed usb c cable,BROAD
+334,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144390339200944085,pocket sized battery pack,BROAD
+335,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144187199923242049,iphone 7 mint green charger,EXACT
+336,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144172217697990304,mfi certified usb c cable,BROAD
+337,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144375965376130401,heavy charger for iphone 7 plus,EXACT
+338,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144131829669391353,long apple cable,PHRASE
+339,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144195010188211101,replacement lightning cord,EXACT
+340,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144236507297895019,braided charger cord for iphone x,EXACT
+341,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144254417776561555,flashlight power bank,BROAD
+342,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144263561259445168,charging cable iphone x 6ft,EXACT
+343,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144310193855023567,6 ft iphone s max cable,EXACT
+344,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144271698865291480,durable charger iphone,EXACT
+345,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144351820976738081,apple iphone xs charger cable,EXACT
+346,0,0,0.0,0.0,144275915069863599,Lightning 1 Pack Headline,0,0.0,0,144387574136621009,iphone charger,BROAD
+347,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144170452826066941,iphone xs charger cable,BROAD
+348,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144361539659203994,pocket charger iphone,EXACT
+349,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144336312881658633,certified apple cable,EXACT
+350,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144334180146229151,iphone 7 plus braided charger,EXACT
+351,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144289548884352807,usb c cable note 9,EXACT
+352,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144351490216733103,charging cable iphone xr,EXACT
+353,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144333364692864832,nylon braided iphone charger,EXACT
+354,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144168246395872216,htc charger,EXACT
+355,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144341575245215876,usb type c cord 6foot,BROAD
+356,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144233322684804306,cute portable charger,BROAD
+357,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144180179382295831,phone charger for apple 7,EXACT
+358,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144177055832410552,iphone 5c charger cable,BROAD
+359,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144382032463836676,iphone 6 foot charger cord,EXACT
+360,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144389366717809596,apple iphone quick charger,EXACT
+361,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144358212476649276,htc one charging cable,EXACT
+362,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144227536458420858,certified apple charger,EXACT
+363,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144121836056843958,fast charging type c cable,BROAD
+364,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144265553918053956,iphone x extended charger,EXACT
+365,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144180188530605919,double braided lightning cable,EXACT
+366,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144285080956127823,lg charger cable,EXACT
+367,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144254318048984812,iphone xr charger cable,BROAD
+368,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144146632605180044,mini portable charger,EXACT
+369,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144121444297817171,6ft iphone cord apple,EXACT
+370,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144376765489435643,samsung s9 plus,EXACT
+371,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144232252737347643,long braided apple charger,EXACT
+372,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144391115430904008,usb type c cord 6 foot,BROAD
+373,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144131764455194869,iphone 6 phone 6ft charger,EXACT
+374,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144366699885900479,quick charger type c cable,BROAD
+375,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144178112909693903,apple iphone cord 6ft,EXACT
+376,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144274142068770850,iphone charger cable 6ft,EXACT
+377,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144240929103386626,iphone x max charger,EXACT
+378,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144344569919554217,portable charger 3000mah,BROAD
+379,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144185237362480497,type c cord 6 feet,BROAD
+380,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144256066352366800,heavy charger for iphone 7 plus,EXACT
+381,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144214698738671611,lg android charger,EXACT
+382,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144123945315116810,lightning cables,EXACT
+383,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144315623451766105,ultra compact portable charger,EXACT
+384,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144339584314788107,kevlar usb cable,EXACT
+385,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144302131826797665,iphone cord 6 feet,EXACT
+386,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144294346094851544,iphone charger 6 foot,EXACT
+387,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144395668272781787,lg tablet charger cable,EXACT
+388,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144145690590493577,apple x charger,EXACT
+389,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144127489732810192,iphone x leather vintage case,EXACT
+390,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144376123886108081,apple certified lightning charger,EXACT
+391,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144340971711112230,apple cable 6ft,EXACT
+392,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144243722492584149,apple iphone xs charger apple certified,EXACT
+393,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144158753799299036,mini power bank,BROAD
+394,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144170877089408696,durable charger iphone,EXACT
+395,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144154449262729179,apple xr charger,EXACT
+396,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144255507473094165,apple 6 phone charger,EXACT
+397,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144267778045839284,iphone xs max chargers,EXACT
+398,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144381638950302124,lightning cable iphone,EXACT
+399,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144149203155760260,apple leather case iphone x,EXACT
+400,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144213776614669691,certified apple cable,BROAD
+401,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144283164934933391,iphone 6 foot charger cord,EXACT
+402,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144276760687079452,usb type c cable 6feet,BROAD
+403,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144250535987660081,iphone cord,EXACT
+404,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144323750783218381,phone charger cord iphone 6,EXACT
+405,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144183384475881731,apple charging cables for iphone x,EXACT
+406,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144235996880557191,pocket charger iphone,BROAD
+407,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144270634413416535,ipad charging cable,PHRASE
+408,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144141464135053298,6 ft long charging cable for iphone,EXACT
+409,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144282752572913876,iphone cords mfi certified,EXACT
+410,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144201518274253375,apple phone charger cord 6ft,EXACT
+411,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144299740412045990,fast charger for iphone x,EXACT
+412,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144249810648113804,6 iphone charger cable,EXACT
+413,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144390408635410492,apple iphone x case leather,EXACT
+414,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144301113432727125,chargers for iphone x 6ft,EXACT
+415,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144212338517860972,iphone xr cable,EXACT
+416,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144201832832294949,ipad lightning cable 6ft,EXACT
+417,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144152142847916973,long iphone cable,PHRASE
+418,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144170556212125302,phone charger iphone 6,EXACT
+419,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144123776572827444,duracell iphone 6 charger,EXACT
+420,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144263114968250455,portable charger iphone 7 plus,EXACT
+421,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144157826100729582,apple iphone 7 plus charger,EXACT
+422,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144260964335567435,type c cable 6foot,BROAD
+423,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144196537754638978,usb cable android,BROAD
+424,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144333729988957614,travel portable charger,BROAD
+425,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144344312594282696,portable charger gifts,BROAD
+426,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144351594783327196,small portable charger,EXACT
+427,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144316369165128702,mini portable charger,BROAD
+428,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144253019856623687,portable charger 3000mah,EXACT
+429,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144163552704923848,6 ft long charging cable for iphone,EXACT
+430,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144289470888159913,iphone 6 long charging cord,EXACT
+431,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144176462134284975,apple charger cord,BROAD
+432,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144301294755375742,apple iphone x charger mfi certified,EXACT
+433,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144287499186581851,micro rapid charging cable,EXACT
+434,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144189907045967733,lipstick portable charger,BROAD
+435,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144252083201615744,iphone charger 7 plus,EXACT
+436,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144176199192781763,iphone x charging cable,EXACT
+437,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144273821422414142,xbox charger,EXACT
+438,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144238884667727009,phone charger battery pack portable,EXACT
+439,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144156626017854301,iphone x leather case,BROAD
+440,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144223750127535463,certified apple cord 6ft,EXACT
+441,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144206017468354203,apple 6+ phone charging cord,BROAD
+442,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144326429255520784,iphone se charger cable,BROAD
+443,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144262739233530037,samsung charger 6ft,EXACT
+444,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144322415029024006,cable cord iphone charger,EXACT
+445,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144330551363176666,kindle charging cable 6ft,EXACT
+446,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144270935194314595,iphone xr cable,EXACT
+447,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144385435465925588,flashlight with phone charger,EXACT
+448,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144312734889377009,usb c cable 6feet,BROAD
+449,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144316529644541846,apple charger cable xs,EXACT
+450,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144317500097951065,samsung 7 charger cord,EXACT
+451,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144357267257552465,fast charger iphone x,EXACT
+452,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144185118125421324,power stick,EXACT
+453,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144356635594754623,andriod charger cable,EXACT
+454,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144235730515442391,rapid type c cable,BROAD
+455,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144309411206046623,6ft charger cable for apple,EXACT
+456,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144246701672307683,portable charger gift,PHRASE
+457,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144333656479073925,certified apple cord,BROAD
+458,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144122080457445128,usb charging cable,EXACT
+459,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144169817146102660,iphone charger portable,EXACT
+460,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144159317268653275,portable charger iphone 7,EXACT
+461,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144317320342749966,portable charger iphone 8,EXACT
+462,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144383145732278111,ultra compact power bank,EXACT
+463,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144318331037335660,iphone 6 charger cable,BROAD
+464,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144218864697403691,lightning cords for iphone,EXACT
+465,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144117747271023234,lifetime warranty lightning cable,EXACT
+466,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144282920215970847,lightning cable for iphone,EXACT
+467,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144381689551073659,cute portable charger,BROAD
+468,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144253441137311283,apple charger iphone 10,EXACT
+469,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144117149050365986,phone charger for iphone,EXACT
+470,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144262335636942310,portable charger girls,BROAD
+471,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144297989700926488,ultra compact portable charger,BROAD
+472,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144137999552876503,portable charger flashlight,BROAD
+473,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144342692613644264,small portable charger,BROAD
+474,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144356275218452446,colorful usb c cable,BROAD
+475,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144188080154279183,iphone charger xr,EXACT
+476,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144333166738791242,headset charging cable,EXACT
+477,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144365202612679051,x leather case iphone,EXACT
+478,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144360422380013227,premium usb charging cable,EXACT
+479,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144310133915371731,smallest portable charger,BROAD
+480,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144126283800729446,charge iphone 6 plus military grade cable,EXACT
+481,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144326563669172173,portable charger girl,BROAD
+482,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144141917173235842,usb type c cord 2pack,BROAD
+483,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144244240779992560,usb type c cable 6 foot,BROAD
+484,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144167017139490416,apple iphone xs charger apple certified,EXACT
+485,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144308963751749884,pocket size power bank,EXACT
+486,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144274289074744871,colorful portable charger,BROAD
+487,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144191533092663854,type c charger,BROAD
+488,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144224825588998179,apple approved charging cords,EXACT
+489,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144151760467096315,usb c cord 6 feet,BROAD
+490,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144143928810570830,apple charger cable 6ft,EXACT
+491,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144244097581852085,iphone 7 long charging cord,EXACT
+492,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144307687159464941,iphone x case leather,EXACT
+493,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144124824511662640,apple iphone x charger mfi certified,EXACT
+494,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144116019278559101,pixel 2 rapid charger,EXACT
+495,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144309912860213085,portable charger iphone x,EXACT
+496,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144152568678797079,type c cord 6 ft,BROAD
+497,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144234988745639513,iphone cords,EXACT
+498,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144232152325131557,6 feet iphone charger cable griffin,EXACT
+499,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144117414725636925,colored usb c cable,BROAD
+500,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144346486944922821,charger cable iphone 6,EXACT
+501,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144379492456261350,6ft charger cable for apple,EXACT
+502,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144281927900299226,charge iphone 6 plus military grade cable,EXACT
+503,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144352275492625912,lightening cable,BROAD
+504,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144197077208831408,type c cable 6 feet,BROAD
+505,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144324413596257974,iphone charger xr,EXACT
+506,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144246670908323967,certified iphone charger cable,BROAD
+507,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144307886673179313,apple x charger,EXACT
+508,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144361092598766244,fast charger iphone x,EXACT
+509,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144234799326710201,iphone 5 charger cable,BROAD
+510,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144342042289658246,rapid charger for iphone 6,EXACT
+511,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144396638013037247,charger for kindle,EXACT
+512,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144144706783667600,lipstick portable charger,BROAD
+513,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144261795806504013,ipad lightning cable 6ft,EXACT
+514,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144196824536043870,apple approved type c cable,BROAD
+515,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144350237032632946,iphone 6 long charging cord,EXACT
+516,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144381363618667364,usb type c cord 6feet,BROAD
+517,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144381247774214733,micro usb charger,BROAD
+518,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144144121454886014,lightening cords,BROAD
+519,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144136210231189222,lifetime warranty lightning cable,EXACT
+520,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144250472503313421,cable cord iphone charger,EXACT
+521,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144123356004122572,iphone charger xs max,EXACT
+522,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144342921968833817,iphone battery backup,EXACT
+523,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144160846856958472,color portable charger,EXACT
+524,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144289150667098152,certified lightning cable,BROAD
+525,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144384574875749714,iphone charger colored braided,EXACT
+526,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144310596924017706,6ft android charger,EXACT
+527,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144232131640917981,usb c cord 6feet,BROAD
+528,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144336107799162947,charger for iphone 7 plus,EXACT
+529,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144373611435632675,portable charger for iphone 7,EXACT
+530,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144119450876668175,iphone x apple leather case,EXACT
+531,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144223680111456509,colors usb c cable,BROAD
+532,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144141428139303674,iphone charger 6ft,EXACT
+533,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144124100972172812,6ft iphone braided cable,EXACT
+534,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144381413872863988,6ft iphone charger colorful,EXACT
+535,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144291362327963859,smallest portable charger,EXACT
+536,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144172338759390570,iphone charger certified apple mfi,EXACT
+537,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144355843002828830,iphone charger braided cords,EXACT
+538,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144186284065593539,apple certified braided phone charger cord,EXACT
+539,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144314665266948339,heavy duty iphone charger,EXACT
+540,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144380255485487748,apple charger for iphone 7 plus,EXACT
+541,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144160989265654129,type c cord 6 foot,BROAD
+542,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144206002169634368,indestructible usb c cable,BROAD
+543,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144373542740391016,portable charger iphone xs max,EXACT
+544,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144261914431907293,iphone charger 6,EXACT
+545,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144137578986307461,mophie chargers for iphone 6,EXACT
+546,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144161948726128535,military grade type c cable,BROAD
+547,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144309927857169729,x portable charger iphone,EXACT
+548,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144120302473131855,iphone 6 inch charging cable,EXACT
+549,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144282303699575106,usb c cable 6ft,BROAD
+550,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144235214150582483,lightning cable durable,EXACT
+551,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144266135081880368,apple iphone 7 plus charger,EXACT
+552,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144135094903001627,apple charger iphone 10,EXACT
+553,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144390640895503113,lightning cable 6ft,PHRASE
+554,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144278656152384848,apple iphone x charger cable apple certified,EXACT
+555,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144175755218927003,apple certified iphone charger,EXACT
+556,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144345401542396576,ipad cord,EXACT
+557,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144172073177475414,phone charger iphone 6,EXACT
+558,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144121406134772366,iphone 6 portable charger,EXACT
+559,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144161406067219683,apple charging cables for iphone x,EXACT
+560,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144115610283291662,lightning cords for iphone,EXACT
+561,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144230319591646258,iphone braided cord,EXACT
+562,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144373354813950042,portable charger with flashlight,EXACT
+563,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144296631358734961,phone charger iphone 6ft,EXACT
+564,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144387347011537157,apple certified braided phone charger cord,EXACT
+565,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144260199964216208,portable charger iphone 6,EXACT
+566,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144190660044068496,apple 6 foot chargers for iphone,EXACT
+567,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144377161574508482,lightning cords,EXACT
+568,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144220070094616986,apple charging cable,BROAD
+569,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144201486117475456,iphone xs charging cord long,EXACT
+570,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144284616009380885,iphone charging cord,PHRASE
+571,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144209955779360557,portable charger iphone xr,EXACT
+572,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144219795729525765,portable charger iphone 6s,EXACT
+573,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144180678761088427,apple xr charger,EXACT
+574,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144163941901306990,apple charger cable xs,EXACT
+575,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144233990160173348,iphone x charger cable,BROAD
+576,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144142558402368761,portable charger iphone xs,EXACT
+577,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144291679685482852,apple iphone charger,BROAD
+578,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144166216848439820,kindle charger,EXACT
+579,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144120097086395839,usb c cable 2 pack,BROAD
+580,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144129554214188975,heavy duty iphone charger,EXACT
+581,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144297207400832294,usb c cable 6 foot,BROAD
+582,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144140764802314511,apple certified phone charger,EXACT
+583,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144255373137730773,usb c cord 6 foot,BROAD
+584,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144209733013529388,iphone 5s charger cable,BROAD
+585,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144204641000782271,usb c cord 2 pack,BROAD
+586,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144149250645292262,iphone 10 plus charger cable,BROAD
+587,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144354921678245806,apple iphone cord,BROAD
+588,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144231289386889255,certified iphone charger,BROAD
+589,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144210997468449529,charger for galaxy s8,EXACT
+590,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144129633313666268,iphone battery charger portable,EXACT
+591,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144367071597753123,apple charger cord,EXACT
+592,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144222445689506775,apple 6 foot chargers for iphone,EXACT
+593,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144201673435845180,strong type c cable,BROAD
+594,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144319436736041982,apple charging cord,EXACT
+595,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144196332618578822,iphone cable nylon braided,EXACT
+596,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144123991812899071,certified iphone cable,BROAD
+597,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144136126573433938,iphone 7 plus charger cable,BROAD
+598,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144192669102962649,iphone charger xs max,EXACT
+599,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144142367222401733,portable charger with flashlight,BROAD
+600,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144231778640020035,iphone 7 chargers,EXACT
+601,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144386276843050934,samsung 8 6ft charger,EXACT
+602,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144171089474270417,iphone xs charging cord long,EXACT
+603,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144387897565069654,type c cord 6foot,BROAD
+604,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144216356473664342,kindle charger replacement,EXACT
+605,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144122513860281288,mini power bank,EXACT
+606,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144291054514914931,type c cable 2pack,BROAD
+607,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144279552310650126,6ft iphone charger,EXACT
+608,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144130459077306185,charger for lg 442bg,EXACT
+609,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144168335676011152,genuine leather iphone x case,BROAD
+610,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144220652199421811,phone charger cord,EXACT
+611,0,0,0.0,0.0,144247026959826085,headline-3350,0,0.0,0,144191128776851806,pocket power bank,BROAD
+612,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144396006848724079,certified apple recharger cord,EXACT
+613,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144220451568048328,apple iphone x charger,EXACT
+614,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144376920278793042,usb type c cable 6 ft,BROAD
+615,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144150886659011736,iphone xs long charger,EXACT
+616,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144261647081419772,braided iphone cord,PHRASE
+617,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144210727151929782,type c cord 2pack,BROAD
+618,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144121695780060296,iphone cable 6ft,EXACT
+619,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144264694998017013,iphone 6 inch charging cable,EXACT
+620,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144361101254576006,iphone braided cord,EXACT
+621,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144214811945239599,braided 6ft iphone charger,EXACT
+622,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144143466154305881,quick charger usb c cable,BROAD
+623,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144238000032490374,leather case for iphone x,BROAD
+624,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144326753541520722,portable charger iphone,EXACT
+625,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144298482909740469,6ft apple lightning cable,EXACT
+626,0,0,0.0,0.0,144363125977934804,Lightning Headline 2 Pack,0,0.0,0,144123592056070521,apple cords for iphone 7,EXACT
+627,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144161918286506141,usb type c cable fast charging flat,EXACT
+628,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144268918504551717,braided 6ft iphone charger,EXACT
+629,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144229223020162208,apple cable charger 6 foot,EXACT
+630,0,0,0.0,0.0,144234234208353843,Micro USB Headline,0,0.0,0,144325968155897069,htc one m9 charger,EXACT
+631,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144302141406567715,nylon type c cable,BROAD
+632,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144342527717587517,iphone xs long charger,EXACT
+633,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144124494058023834,braided usb c,EXACT
+634,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144156617014518137,certified apple recharger cord,EXACT
+635,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144277955686029337,braided lightning cable,PHRASE
+636,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144216922299475989,apple 6 phone charger,EXACT
+637,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144382585923863522,apple cable 6ft,EXACT
+638,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144160192293914055,braided usb to type c,EXACT
+639,0,0,0.0,0.0,144128619076132074,Lightning headline,0,0.0,0,144320771422369998,iphone cord,EXACT
+640,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144144738543445494,ipad charger cord,BROAD
+641,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144183053804464027,apple approved usb c cable,BROAD
+642,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144157588867922718,iphone lightning cable certified,EXACT
+643,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144220529595770791,iphone 6s portable charger,EXACT
+644,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144241789999990760,portable charger gift,BROAD
+645,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144267647937777756,iphone charger colored braided,EXACT
+646,0,0,0.0,0.0,144246044711029553,Lightning 1 pack/2 pack/10ft,0,0.0,0,144277528388010164,iphone charger cable,PHRASE
+647,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144194800984146740,lightening cords,EXACT
+648,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144338770673316713,nylon usb c cable,BROAD
+649,0,0,0.0,0.0,144377002898337630,Leather Case Headline,0,0.0,0,144162190154301746,iphone x leather case,EXACT
+650,0,0,0.0,0.0,144387653378870452,Lightning Headline 1 Pack,0,0.0,0,144299346767128128,iphone charger cable 6ft,EXACT
+651,0,0,0.0,0.0,144385662719164127,Headline portable charger,0,0.0,0,144180648174818375,mini portable charger,BROAD
+652,0,0,0.0,0.0,144218053269835734,Type C headline,0,0.0,0,144152161161286920,usb type c cable 6 feet,BROAD
