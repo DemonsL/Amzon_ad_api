@@ -134,7 +134,7 @@ class AprSpKeywords(SpBase):
     def __init__(self, SnapDate, Country, json_report):
         ModelSpReports.__init__(self, SnapDate, Country, json_report)
         self.KeywordId = json_report.get('keywordId', 0)
-        self.Keyword = json_report.get('keyword', '')
+        self.Keyword = json_report.get('keywordText', '')
         self.MatchType = json_report.get('matchType', '')
         self.Query = json_report.get('query', '')
 
