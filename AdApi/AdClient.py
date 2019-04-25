@@ -1,9 +1,9 @@
-# coding:utf-8
+# encoding:utf-8
 import json
 import requests
 from Config.api_config import api_version, regions, oauth_url, report_type
 
-class Client(object):
+class AdClient(object):
 
     def __init__(self, client_id, client_secret, access_token, refresh_token):
         self.client_id = client_id
@@ -48,18 +48,24 @@ class Client(object):
     # 创建赞助商品/赞助品牌报告
     def create_report(self, params):
         scope = params.get('scope')
+        spon = params.get('spon')
         record_type = params.get('record_type')
         interface = '{spon}/{record_type}/report'.format(
-            spon=params.get('spon'),
+            spon = spon,
             record_type = record_type
         )
 
-        metrics_list = report_type.get(record_type) + report_type.get('common')
+        rp_common = '{}_common'.format(spon)
+        rt = report_type.get(record_type)
+        if spon == 'hsa':
+            rt = rt[1:]
+        metrics_list = rt + report_type.get(rp_common)
         payload = {
-            'segment': 'query',
-            'reportDate': '20190401',
+            'reportDate': params.get('reportDate'),
             'metrics': ','.join(metrics_list)
         }
+        if 'sp/keywords' in interface:
+            payload['segment'] = 'query'
         return self.excute_req(interface, method='POST',scope=scope, payload=payload)
 
     # 下载报告

@@ -1,5 +1,5 @@
-# coding:utf-8
-from CommonMethod.common import create_client
+# encoding:utf-8
+from Common.common import create_client
 
 
 
