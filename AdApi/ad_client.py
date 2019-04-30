@@ -1,9 +1,9 @@
 # encoding:utf-8
 import json
 import requests
-from Config.api_config import api_version, regions, oauth_url, report_type
+from Config.api_config import api_version, regions, oauth_url
 
-class AdClient(object):
+class AdClient:
 
     def __init__(self, client_id, client_secret, access_token, refresh_token):
         self.client_id = client_id
@@ -45,35 +45,6 @@ class AdClient(object):
         interface = 'profiles/{}'.format(profile_id)
         return self.excute_req(interface)
 
-    # 创建赞助商品/赞助品牌报告
-    def create_report(self, params):
-        scope = params.get('scope')
-        spon = params.get('spon')
-        record_type = params.get('record_type')
-        interface = '{spon}/{record_type}/report'.format(
-            spon = spon,
-            record_type = record_type
-        )
-
-        rp_common = '{}_common'.format(spon)
-        rt = report_type.get(record_type)
-        if spon == 'hsa':
-            rt = rt[1:]
-        metrics_list = rt + report_type.get(rp_common)
-        payload = {
-            'reportDate': params.get('reportDate'),
-            'metrics': ','.join(metrics_list)
-        }
-        if 'sp/keywords' in interface:
-            payload['segment'] = 'query'
-        return self.excute_req(interface, method='POST',scope=scope, payload=payload)
-
-    # 下载报告
-    def get_report(self, report_id, params):
-        scope = params.get('scope')
-        interface = 'reports/{}/download'.format(report_id)
-        return self.excute_req(interface, scope=scope)
-
     # 执行请求操作
     def excute_req(self, interface, method='GET', scope=None, payload=None):
         headers = {
@@ -90,6 +61,21 @@ class AdClient(object):
         print(method + ' '+ url)
         if scope:
             headers['Amazon-Advertising-API-Scope'] = scope
-        if method == 'POST':
-            return requests.post(url, headers=headers, data=json.dumps(payload))
-        return requests.get(url, headers=headers)
+        if method == 'GET':
+            resp = requests.get(url, headers=headers)
+            if payload:
+                resp = requests.get(url, headers=headers, params=payload)
+            return resp
+        elif method == 'POST':
+            resp = requests.post(url, headers=headers)
+            if payload:
+                resp = requests.post(url, headers=headers, data=json.dumps(payload))
+            return resp
+        elif method == 'PUT':
+            resp = requests.put(url, headers=headers)
+            if payload:
+                resp = requests.put(url, headers=headers, params=payload)
+            return resp
+        elif method == 'DELETE':
+            return requests.delete(url, headers=headers)
+

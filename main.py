@@ -1,19 +1,24 @@
 # encoding:utf-8
-from Common.common import create_client
-
+import sys
+sys.path.append('../')
+from Config.api_config import account
+from AdApi.campaigns import Campaigns
 
 
 if __name__ == '__main__':
+    client_id = account.get('client_id')
+    client_secret = account.get('client_secret')
+    access_token = account.get('access_token')
+    refresh_token = account.get('refresh_token')
+    scope = '1223366941512513'  # us 1223366941512513 ca 4395156076169305
     params = {
-        'scope': '1223366941512513', # us 1223366941512513 ca 4395156076169305
+        'spon': 'sp',
+        'record_type': 'campaigns',
+        'payload': {
+            'stateFilter': 'enabled'
+        }
     }
-    ad_client = create_client()
 
-    # ad_client.do_refresh_token()  # 刷新Token
-    # resp = ad_client.list_profiles()
-    # print(resp.text)
-    # if 'UNAUTHORIZED' in resp.text:
-    #     ad_client.do_refresh_token()
-    #     print(ad_client.list_profiles().text)
-    # batch_download_reports(ad_client)
-    # batch_reports_json_to_csv()
+    campaign = Campaigns(client_id, client_secret, access_token, refresh_token, scope)
+    campaign.do_refresh_token()
+    print(campaign.list_campaigns(params).text)
