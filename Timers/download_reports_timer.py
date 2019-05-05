@@ -64,10 +64,12 @@ class DownloadReports:
         reports_dict = dict(json.loads(reports.text))
         report_id = reports_dict.get('reportId', None)
         report = client.get_report(report_id)
-        print('GET_RESP:{}' + report.text)
 
-        report_byte = gzip.decompress(report.content)  # 解压缩
-        return report_byte
+        try:
+            report = gzip.decompress(report.content)  # 解压缩
+        except Exception as e:
+            print('Decompress Error: ' + str(e))
+        return report
 
     # 下载报告并存到数据库
     def report_to_sql(self, client, params):
@@ -78,15 +80,9 @@ class DownloadReports:
         snap_dates = self.get_report_date(table_name)
 
         if report_date in snap_dates:
-            try:
-                self.del_reports_for_date(table_name, report_date)
-            except Exception as e:
-                print(e)
-        try:
-            report_byte = self.download_report(client, params)
-            self.excute_add_report(report_byte, table_name, country, params)
-        except Exception as e:
-            print(e)
+            self.del_reports_for_date(table_name, report_date)
+        report_byte = self.download_report(client, params)
+        self.excute_add_report(report_byte, table_name, country, params)
 
     # 批量下载报告
     def batch_download_reports(self, client, params):
