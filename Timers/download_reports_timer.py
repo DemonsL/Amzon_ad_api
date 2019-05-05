@@ -16,7 +16,7 @@ class DownloadReports:
         session = reports.DBSession()
         report_excute = eval('reports.{}'.format(table_name))
         country = session.query(report_excute, report_excute.Country)\
-                         .filter(report_excute.SnapDate==report_date)
+                         .filter(report_excute.SnapDate==report_date).all()
         country = set([c[1] for c in country])
         return list(country)
 
@@ -27,6 +27,14 @@ class DownloadReports:
         snap_date = session.query(report_excute, report_excute.SnapDate).all()
         snap_date = set([''.join(str(d[1]).split('-')) for d in snap_date])
         return list(snap_date)
+
+    def del_reports_for_date(self, table_name, report_date):
+        session = reports.DBSession()
+        report_excute = eval('reports.{}'.format(table_name))
+        records = session.query(report_excute).filter_by(SnapDate=report_date).all()
+        for rec in records:
+            session.delete(rec)
+        session.commit()
 
     # 保存报告到数据库
     def excute_add_report(self, json_b, table_name, country, params):
@@ -68,17 +76,17 @@ class DownloadReports:
         country = params.get('mkp')
         report_date = params.get('reportDate')
         snap_dates = self.get_report_date(table_name)
-        db_date = str(datetime.datetime.strptime(report_date, '%Y%m%d').date())
-        report_mkp = self.get_report_country(table_name, db_date)
-        print('tb:{tb}, mkp:{mkp},db_mkp:{dbm},db_date{dd}'
-              .format(tb=table_name, mkp=country, dbm=report_mkp, dd=snap_dates))
 
-        if (not snap_dates) or (report_date not in snap_dates) or (country not in report_mkp):
+        if report_date in snap_dates:
             try:
-                report_byte = self.download_report(client, params)
-                self.excute_add_report(report_byte, table_name, country, params)
+                self.del_reports_for_date(table_name, report_date)
             except Exception as e:
                 print(e)
+        try:
+            report_byte = self.download_report(client, params)
+            self.excute_add_report(report_byte, table_name, country, params)
+        except Exception as e:
+            print(e)
 
     # 批量下载报告
     def batch_download_reports(self, client, params):
@@ -91,11 +99,14 @@ class DownloadReports:
 
     def run(self, client, params):
         report_date = datetime.datetime.now()
-        report_date -= datetime.timedelta(days=2)
-        report_date = report_date.strftime('%Y%m%d')
-        print(report_date)
-        params['reportDate'] = str(report_date)
-        self.batch_download_reports(client, params)
+        interval_day = 2
+        while interval_day < 32:    # 更新前30天内报告数据
+            report_date -= datetime.timedelta(days=interval_day)
+            report_date = report_date.strftime('%Y%m%d')
+            print(report_date)
+            params['reportDate'] = str(report_date)
+            self.batch_download_reports(client, params)
+            interval_day += 1
 
 
 
@@ -111,15 +122,15 @@ if __name__ == '__main__':
         params['mkp'] = scope[:2]
         params['scope'] = scope[2:]
 
-        timer = datetime.datetime(2019, 4, 30, 9, 51).strftime('%Y-%m-%d %H:%M')
         report = Reports(client_id, client_secret, access_token, refresh_token, params['scope'])
         dw_report = DownloadReports()
+        timer = datetime.datetime(2019, 5, 5, 16, 28).strftime('%Y-%m-%d %H:%M')
         dw_report_timer = TimersHandler(timer, report, dw_report.run, params)
         dw_report_timer.set_timer()
 
 
-    # re_date = 20190309
-    # while re_date < 20190310:
-    #     dw_report.batch_download_reports(ad_client, str(re_date))
-    #     re_date += 1
-    # print('Successful!')
+        # re_date = 20190309
+        # while re_date < 20190310:
+        #     dw_report.run(report, params, str(re_date))
+        #     re_date += 1
+        # print('Successful!')

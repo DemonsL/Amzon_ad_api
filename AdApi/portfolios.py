@@ -35,25 +35,17 @@ class Portfolios(AdClient):
 
     # 通过id获取广告组合及扩展
     def get_portfolio_ex(self, portfolio_id):
-        interface = 'portfolios/extended{}'.format(portfolio_id)
+        interface = 'portfolios/extended/{}'.format(portfolio_id)
         return self.excute_req(interface, scope=self.scope)
 
     # 创建广告组合
     def create_portfolios(self, params):
         interface = 'portfolios'
-        payload = {
-            'name': params.get('name'),
-            'budget': params.get('budget'),
-            'state': params.get('state')
-        }
+        payload = params.get('payload')
         return self.excute_req(interface, method='POST', scope=self.scope, payload=payload)
 
     # 更新广告组合
     def update_portfolios(self, params):
         interface = 'portfolios'
-        payload = {
-            'name': params.get('name'),
-            'budget': params.get('budget'),
-            'state': params.get('state')
-        }
+        payload = params.get('payload')
         return self.excute_req(interface, method='PUT', scope=self.scope, payload=payload)
