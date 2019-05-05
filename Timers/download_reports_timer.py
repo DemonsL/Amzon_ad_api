@@ -28,6 +28,7 @@ class DownloadReports:
         snap_date = set([''.join(str(d[1]).split('-')) for d in snap_date])
         return list(snap_date)
 
+    # 根据日期删除报告
     def del_reports_for_date(self, table_name, report_date):
         session = reports.DBSession()
         report_excute = eval('reports.{}'.format(table_name))
@@ -80,9 +81,15 @@ class DownloadReports:
         snap_dates = self.get_report_date(table_name)
 
         if report_date in snap_dates:
-            self.del_reports_for_date(table_name, report_date)
+            try:
+                self.del_reports_for_date(table_name, report_date)
+            except Exception as e:
+                print('DeleteSqlError: ' + str(e))
         report_byte = self.download_report(client, params)
-        self.excute_add_report(report_byte, table_name, country, params)
+        try:
+            self.excute_add_report(report_byte, table_name, country, params)
+        except Exception as e:
+            print('AddSqlError: ' + str(e))
 
     # 批量下载报告
     def batch_download_reports(self, client, params):
