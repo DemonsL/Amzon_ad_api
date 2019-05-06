@@ -3,6 +3,9 @@ from AdApi.ad_client import AdClient
 
 
 class Targets(AdClient):
+    """
+    产品定位接口
+    """
 
     def get_targeting_clause(self, target_id):
         interface = 'sp/targets/{}'.format(target_id)

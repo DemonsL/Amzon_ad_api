@@ -2,6 +2,9 @@
 import datetime
 
 class TimersHandler:
+    """
+    定时器
+    """
 
     def __init__(self, timer):
         self.timer = timer

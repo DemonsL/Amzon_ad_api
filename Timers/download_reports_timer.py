@@ -11,17 +11,10 @@ from Config.api_config import report_type, account
 from Timers.timers_handler import TimersHandler
 
 class DownloadReports:
+    """
+    定时批量下载报告
+    """
 
-    # 通过日期返回报告国别
-    def get_report_country(self, table_name, report_date):
-        session = reports.DBSession()
-        report_excute = eval('reports.{}'.format(table_name))
-        country = session.query(report_excute, report_excute.Country)\
-                         .filter(report_excute.SnapDate==report_date).all()
-        country = set([c[1] for c in country])
-        return list(country)
-
-    # 返回数据库报告日期
     def get_report_date(self, table_name):
         session = reports.DBSession()
         report_excute = eval('reports.{}'.format(table_name))
@@ -29,7 +22,6 @@ class DownloadReports:
         snap_date = set([''.join(str(d[1]).split('-')) for d in snap_date])
         return list(snap_date)
 
-    # 根据日期删除报告
     def del_reports_for_date(self, table_name, report_date):
         session = reports.DBSession()
         report_excute = eval('reports.{}'.format(table_name))
@@ -38,8 +30,7 @@ class DownloadReports:
             session.delete(rec)
         session.commit()
 
-    # 保存报告到数据库
-    def excute_add_report(self, json_b, table_name, country, params):
+    def add_report_to_sql(self, json_b, table_name, country, params):
         report_json = json.loads(json_b.decode())
         snap_date = params.get('reportDate')
         report_excute = 'reports.{}'.format(table_name)
@@ -50,7 +41,6 @@ class DownloadReports:
             session.add(report_to_sql)
         session.commit()
 
-    # 生成报告
     def gen_reports(self, client, params):
         reports = client.create_report(params)
         # token失效时，刷新token
@@ -60,7 +50,6 @@ class DownloadReports:
         print('POST_RESP: ' + reports.text)
         return reports
 
-    # 下载并解压报告
     def download_report(self, client, params):
         reports = self.gen_reports(client, params)
         reports_dict = dict(json.loads(reports.text))
@@ -74,7 +63,6 @@ class DownloadReports:
             print('Decompress Error: ' + str(e))
         return report
 
-    # 下载报告并存到数据库
     def report_to_sql(self, client, params):
         record_t = params.get('record_type')
         table_name = 'Apr' + params.get('spon').capitalize() + record_t[0].upper() + record_t[1:]
@@ -90,11 +78,10 @@ class DownloadReports:
                 print('DeleteSqlError: ' + str(e))
         report_byte = self.download_report(client, params)
         try:
-            self.excute_add_report(report_byte, table_name, country, params)
+            self.add_report_to_sql(report_byte, table_name, country, params)
         except Exception as e:
             print('AddSqlError: ' + str(e))
 
-    # 批量下载报告
     def batch_download_reports(self, client, params):
         for rp_type in report_type.get('type'):      # sp or hsa
             params['spon'] = rp_type
@@ -113,6 +100,8 @@ class DownloadReports:
             params['reportDate'] = str(report_date)
             self.batch_download_reports(client, params)
             interval_day += 1
+
+
 
 
 if __name__ == '__main__':

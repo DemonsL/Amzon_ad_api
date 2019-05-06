@@ -4,8 +4,10 @@ from Config.api_config import report_type
 
 
 class Reports(AdClient):
+    """
+    报告/快照接口
+    """
 
-    # 创建赞助商品/赞助品牌报告
     def create_report(self, params):
         spon = params.get('spon')
         record_type = params.get('record_type')
@@ -27,12 +29,10 @@ class Reports(AdClient):
             payload['segment'] = 'query'
         return self.excute_req(interface, method='POST', scope=self.scope, payload=payload)
 
-    # 下载报告
     def get_report(self, report_id):
         interface = 'reports/{}/download'.format(report_id)
         return self.excute_req(interface, scope=self.scope)
 
-    # 创建快照
     def create_snapshot(self, params):
         interface = '{spon}/{record_type}/snapshot'.format(
             spon=params.get('spon'),
@@ -41,7 +41,6 @@ class Reports(AdClient):
         payload = params.get('payload')
         return self.excute_req(interface, method='POST', scope=self.scope, payload=payload)
 
-    # 下载快照
     def get_snapshot(self, snapshot_id):
         interface = 'snapshots/{}/download'.format(snapshot_id)
         return self.excute_req(interface, scope=self.scope)

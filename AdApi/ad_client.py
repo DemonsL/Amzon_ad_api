@@ -4,6 +4,9 @@ import requests
 from Config.api_config import api_version, regions, oauth_url
 
 class AdClient:
+    """
+    Amazon 广告接口类
+    """
 
     def __init__(self, client_id, client_secret, access_token, refresh_token, scope):
         self.client_id = client_id
@@ -20,7 +23,6 @@ class AdClient:
     def access_token(self, value):
         self._access_token = value
 
-    # 刷新访问令牌
     def do_refresh_token(self):
         headers = {
             'Content-Type': 'application/json'
@@ -36,17 +38,14 @@ class AdClient:
                               data = json.dumps(data))
         self._access_token = dict(resp.json()).get('access_token')
 
-    # 获取配置文件列表
     def list_profiles(self):
         interface = 'profiles'
         return self.excute_req(interface)
 
-    # 通过配置文件id获取配置文件
     def get_profile(self, profile_id):
         interface = 'profiles/{}'.format(profile_id)
         return self.excute_req(interface)
 
-    # 执行请求操作
     def excute_req(self, interface, method='GET', scope=None, payload=None):
         headers = {
             'Content-Type': 'application/json',

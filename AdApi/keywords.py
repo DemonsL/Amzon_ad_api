@@ -3,6 +3,9 @@ from AdApi.ad_client import AdClient
 
 
 class Keywords(AdClient):
+    """
+    关键词接口
+    """
 
     def get_biddable_keyword(self, keyword_id, params):
         interface = '{spon}/keywords/{kid}'.format(
