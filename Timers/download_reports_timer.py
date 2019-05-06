@@ -3,6 +3,7 @@ import sys
 sys.path.append('../')
 import json
 import gzip
+import time
 import datetime
 from Models import reports
 from AdApi.reports import Reports
@@ -64,6 +65,7 @@ class DownloadReports:
         reports = self.gen_reports(client, params)
         reports_dict = dict(json.loads(reports.text))
         report_id = reports_dict.get('reportId', None)
+        time.sleep(10)                          # 下载报告前，需要报告生成成功
         report = client.get_report(report_id)
 
         try:
