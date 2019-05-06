@@ -4,10 +4,6 @@ from AdApi.ad_client import AdClient
 
 class Portfolios(AdClient):
 
-    def __init__(self, client_id, client_secret, access_token, refresh_token, scope):
-        self.scope = scope
-        super().__init__(client_id, client_secret, access_token, refresh_token)
-
     # 获取广告组合列表
     def list_portfolios(self, params):
         interface = 'portfolios'

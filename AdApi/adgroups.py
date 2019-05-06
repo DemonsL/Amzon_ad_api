@@ -4,10 +4,6 @@ from AdApi.ad_client import AdClient
 
 class AdGroups(AdClient):
 
-    def __init__(self, client_id, client_secret, access_token, refresh_token, scope):
-        self.scope = scope
-        super().__init__(client_id, client_secret, access_token, refresh_token)
-
     # 通过id获取广告组
     def get_adgroup(self, adgroup_id):
         interface = 'sp/adGroups/{}'.format(adgroup_id)

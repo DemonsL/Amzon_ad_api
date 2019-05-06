@@ -4,10 +4,6 @@ from AdApi.ad_client import AdClient
 
 class Bid(AdClient):
 
-    def __init__(self, client_id, client_secret, access_token, refresh_token, scope):
-        self.scope = scope
-        super().__init__(client_id, client_secret, access_token, refresh_token)
-
     # 获取广告组出价建议
     def get_bid_recommendations_for_adgroups(self, adgroup_id):
         interface = 'adGroups/{}/bidRecommendations'.format(adgroup_id)

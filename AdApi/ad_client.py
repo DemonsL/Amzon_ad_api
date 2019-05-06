@@ -5,11 +5,12 @@ from Config.api_config import api_version, regions, oauth_url
 
 class AdClient:
 
-    def __init__(self, client_id, client_secret, access_token, refresh_token):
+    def __init__(self, client_id, client_secret, access_token, refresh_token, scope):
         self.client_id = client_id
         self.client_secret = client_secret
         self._access_token = access_token
         self.refresh_token = refresh_token
+        self.scope = scope
 
     @property
     def access_token(self):

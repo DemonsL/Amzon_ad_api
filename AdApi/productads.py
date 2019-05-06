@@ -4,10 +4,6 @@ from AdApi.ad_client import AdClient
 
 class ProductAds(AdClient):
 
-    def __init__(self, client_id, client_secret, access_token, refresh_token, scope):
-        self.scope = scope
-        super().__init__(client_id, client_secret, access_token, refresh_token)
-
     # 通过id获取商品广告
     def get_productad(self, adid):
         interface = 'sp/productAds/{}'.format(adid)

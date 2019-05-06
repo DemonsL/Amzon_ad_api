@@ -4,10 +4,6 @@ from AdApi.ad_client import AdClient
 
 class Keywords(AdClient):
 
-    def __init__(self, client_id, client_secret, access_token, refresh_token, scope):
-        self.scope = scope
-        super().__init__(client_id, client_secret, access_token, refresh_token)
-
     def get_biddable_keyword(self, keyword_id, params):
         interface = '{spon}/keywords/{kid}'.format(
             spon = params.get('spon'),

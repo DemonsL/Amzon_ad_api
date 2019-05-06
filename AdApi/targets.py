@@ -4,10 +4,6 @@ from AdApi.ad_client import AdClient
 
 class Targets(AdClient):
 
-    def __init__(self, client_id, client_secret, access_token, refresh_token, scope):
-        self.scope = scope
-        super().__init__(client_id, client_secret, access_token, refresh_token)
-
     def get_targeting_clause(self, target_id):
         interface = 'sp/targets/{}'.format(target_id)
         return self.excute_req(interface, scope=self.scope)

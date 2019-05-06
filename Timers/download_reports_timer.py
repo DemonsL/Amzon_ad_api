@@ -82,6 +82,7 @@ class DownloadReports:
 
         if report_date in snap_dates:
             try:
+                print('delete old data...')
                 self.del_reports_for_date(table_name, report_date)
             except Exception as e:
                 print('DeleteSqlError: ' + str(e))
@@ -101,9 +102,9 @@ class DownloadReports:
                 self.report_to_sql(client, params)
 
     def run(self, client, params):
-        report_date = datetime.datetime.now()
         interval_day = 2
         while interval_day < 32:    # 更新前30天内报告数据
+            report_date = datetime.datetime.now()
             report_date -= datetime.timedelta(days=interval_day)
             report_date = report_date.strftime('%Y%m%d')
             print(report_date)
@@ -112,9 +113,10 @@ class DownloadReports:
             interval_day += 1
 
 
-
-
 if __name__ == '__main__':
+    timer = datetime.datetime(2019, 5, 5, 19, 7).strftime('%Y-%m-%d %H:%M')
+    dw_report_timer = TimersHandler(timer)
+
     client_id = account.get('client_id')
     client_secret = account.get('client_secret')
     access_token = account.get('access_token')
@@ -124,12 +126,10 @@ if __name__ == '__main__':
     for scope in rp_scope:  # marketplace
         params['mkp'] = scope[:2]
         params['scope'] = scope[2:]
+        report_client = Reports(client_id, client_secret, access_token, refresh_token, params['scope'])
 
-        report = Reports(client_id, client_secret, access_token, refresh_token, params['scope'])
         dw_report = DownloadReports()
-        timer = datetime.datetime(2019, 5, 5, 16, 28).strftime('%Y-%m-%d %H:%M')
-        dw_report_timer = TimersHandler(timer, report, dw_report.run, params)
-        dw_report_timer.set_timer()
+        dw_report_timer.set_timer(dw_report.run, report_client, params)
 
 
         # re_date = 20190309

@@ -5,10 +5,6 @@ from Config.api_config import report_type
 
 class Reports(AdClient):
 
-    def __init__(self, client_id, client_secret, access_token, refresh_token, scope):
-        self.scope = scope
-        super().__init__(client_id, client_secret, access_token, refresh_token)
-
     # 创建赞助商品/赞助品牌报告
     def create_report(self, params):
         spon = params.get('spon')

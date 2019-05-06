@@ -3,20 +3,17 @@ import datetime
 
 class TimersHandler:
 
-    def __init__(self, timer, client, method, params):
+    def __init__(self, timer):
         self.timer = timer
-        self.client = client
-        self.method = method
-        self.params = params
 
-    def set_timer(self):
+    def set_timer(self, method, client, params):
         flag = 0
         while True:
             now = datetime.datetime.now()
             now = now.strftime('%Y-%m-%d %H:%M')
             if now == self.timer:
                 print('Starting...')
-                self.method(self.client, self.params)
+                method(client, params)
                 print('Successful!')
                 flag = 1
             else:

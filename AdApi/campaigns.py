@@ -4,10 +4,6 @@ from AdApi.ad_client import AdClient
 
 class Campaigns(AdClient):
 
-    def __init__(self, client_id, client_secret, access_token, refresh_token, scope):
-        self.scope = scope
-        super().__init__(client_id, client_secret, access_token, refresh_token)
-
     # 通过id获取广告活动
     def get_campaign(self, campaign_id, params):
         interface = '{spon}/campaigns/{campaign_id}'.format(
