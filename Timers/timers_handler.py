@@ -1,26 +1,21 @@
 # encoding: utf-8
-import datetime
+from apscheduler.schedulers.blocking import BlockingScheduler
+
 
 class TimersHandler:
     """
     定时器
     """
 
-    def __init__(self, timer):
+    def __init__(self, timer, job, args):
         self.timer = timer
+        self.job = job
+        self.args = args
 
-    def set_timer(self, method, client, params):
-        flag = 0
-        while True:
-            now = datetime.datetime.now()
-            now = now.strftime('%Y-%m-%d %H:%M')
-            if now == self.timer:
-                print('Starting...')
-                method(client, params)
-                print('Successful!')
-                flag = 1
-            else:
-                if flag == 1:
-                    self.timer = datetime.datetime.strptime(self.timer, '%Y-%m-%d %H:%M')
-                    self.timer += datetime.timedelta(hours=8)
-                    flag = 0
+    def excute_job(self):
+        sched = BlockingScheduler()
+        for arg in self.args:
+            sched.add_job(self.job, 'interval', days=1, start_date=self.timer, args=arg)
+        sched.start()
+
+

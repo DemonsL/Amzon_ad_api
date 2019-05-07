@@ -54,14 +54,15 @@ class DownloadReports:
         reports = self.gen_reports(client, params)
         reports_dict = dict(json.loads(reports.text))
         report_id = reports_dict.get('reportId', None)
-        time.sleep(10)                          # 下载报告前，需要报告生成成功
-        report = client.get_report(report_id)
+        if report_id:
+            time.sleep(15)                          # 下载报告前，需要报告生成成功
+            report = client.get_report(report_id)
 
-        try:
-            report = gzip.decompress(report.content)  # 解压缩
-        except Exception as e:
-            print('Decompress Error: ' + str(e))
-        return report
+            try:
+                report = gzip.decompress(report.content)  # 解压缩
+            except Exception as e:
+                print('Decompress Error: ' + str(e))
+            return report
 
     def report_to_sql(self, client, params):
         record_t = params.get('record_type')
@@ -91,6 +92,7 @@ class DownloadReports:
                 self.report_to_sql(client, params)
 
     def run(self, client, params):
+        client.do_refresh_token()
         interval_day = 2
         while interval_day < 32:    # 更新前30天内报告数据
             report_date = datetime.datetime.now()
@@ -102,29 +104,27 @@ class DownloadReports:
             interval_day += 1
 
 
-
-
-if __name__ == '__main__':
-    timer = datetime.datetime(2019, 5, 5, 19, 7).strftime('%Y-%m-%d %H:%M')
-    dw_report_timer = TimersHandler(timer)
-
+def get_clients():
     client_id = account.get('client_id')
     client_secret = account.get('client_secret')
     access_token = account.get('access_token')
     refresh_token = account.get('refresh_token')
     rp_scope = report_type.get('rp_scope')
-    params = {}
+    clients = []
     for scope in rp_scope:  # marketplace
+        params = {}
         params['mkp'] = scope[:2]
         params['scope'] = scope[2:]
         report_client = Reports(client_id, client_secret, access_token, refresh_token, params['scope'])
+        clients.append([report_client, params])
+    return clients
 
-        dw_report = DownloadReports()
-        dw_report_timer.set_timer(dw_report.run, report_client, params)
 
+if __name__ == '__main__':
+    dw_report = DownloadReports()
+    args = get_clients()
 
-        # re_date = 20190309
-        # while re_date < 20190310:
-        #     dw_report.run(report, params, str(re_date))
-        #     re_date += 1
-        # print('Successful!')
+    timer = datetime.datetime(2019, 5, 7, 13, 51)
+    dw_report_timer = TimersHandler(timer, dw_report.run, args)
+    dw_report_timer.excute_job()
+
