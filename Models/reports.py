@@ -47,18 +47,18 @@ class ModelSpReports:
         self.Impressions = json_report.get('impressions', 0)
         self.Clicks = json_report.get('clicks', 0)
         self.Cost = json_report.get('cost', 0)
-        self.DayOrders = json_report.get('attributedUnitsOrdered1d', 0)
-        self.Day7Orders = json_report.get('attributedUnitsOrdered7d', 0)
-        self.Day14Orders = json_report.get('attributedUnitsOrdered14d', 0)
-        self.Day30Orders = json_report.get('attributedUnitsOrdered30d', 0)
-        self.TotalDayUnits = json_report.get('attributedConversions1d', 0)
-        self.DayUnits = json_report.get('attributedConversions1dSameSKU', 0)
-        self.TotalDay7Units = json_report.get('attributedConversions7d', 0)
-        self.Day7Units = json_report.get('attributedConversions7dSameSKU', 0)
-        self.TotalDay14Units = json_report.get('attributedConversions14d', 0)
-        self.Day14Units = json_report.get('attributedConversions14dSameSKU', 0)
-        self.TotalDay30Units = json_report.get('attributedConversions30d', 0)
-        self.Day30Units = json_report.get('attributedConversions30dSameSKU', 0)
+        self.DayUnits = json_report.get('attributedUnitsOrdered1d', 0)
+        self.Day7Units = json_report.get('attributedUnitsOrdered7d', 0)
+        self.Day14Units = json_report.get('attributedUnitsOrdered14d', 0)
+        self.Day30Units = json_report.get('attributedUnitsOrdered30d', 0)
+        self.TotalDayOrders = json_report.get('attributedConversions1d', 0)
+        self.DayOrders = json_report.get('attributedConversions1dSameSKU', 0)
+        self.TotalDay7Orders = json_report.get('attributedConversions7d', 0)
+        self.Day7Orders = json_report.get('attributedConversions7dSameSKU', 0)
+        self.TotalDay14Orders = json_report.get('attributedConversions14d', 0)
+        self.Day14Orders = json_report.get('attributedConversions14dSameSKU', 0)
+        self.TotalDay30Orders = json_report.get('attributedConversions30d', 0)
+        self.Day30Orders = json_report.get('attributedConversions30dSameSKU', 0)
         self.TotalDayRev = json_report.get('attributedSales1d', 0.0)
         self.DayRev = json_report.get('attributedSales1dSameSKU', 0.0)
         self.TotalDay7Rev = json_report.get('attributedSales7d', 0.0)
@@ -77,10 +77,18 @@ class ModelHsaReports:
     Impressions = Column(Integer)
     Clicks = Column(Integer)
     Cost = Column(Float(6, 2))
-    TotalUnit = Column(Integer)
-    Unit = Column(Integer)
+    TotalOrders = Column(Integer)
+    Orders = Column(Integer)
     TotalRev = Column(Float(6, 2))
     Rev = Column(Float(6, 2))
+    CR = Column(Float(6, 2))
+    NewOrders = Column(Integer)
+    NewOrdersRate = Column(Float(6, 2))
+    NewUnits = Column(Integer)
+    NewUnitsRate = Column(Float(6, 2))
+    NewRev = Column(Float(6, 2))
+    NewRevRate = Column(Float(6, 2))
+
 
     def __init__(self, SnapDate, Country, json_report):
         self.SnapDate = SnapDate
@@ -90,22 +98,33 @@ class ModelHsaReports:
         self.Impressions = json_report.get('impressions', 0)
         self.Clicks = json_report.get('clicks', 0)
         self.Cost = json_report.get('cost', 0)
-        self.TotalUnit = json_report.get('attributedConversions14d', 0)
-        self.Unit = json_report.get('attributedConversions14dSameSKU', 0)
+        self.TotalOrders = json_report.get('attributedConversions14d', 0)
+        self.Orders = json_report.get('attributedConversions14dSameSKU', 0)
         self.TotalRev = json_report.get('attributedSales14d', 0.0)
         self.Rev = json_report.get('attributedSales14dSameSKU', 0.0)
+        self.CR = json_report.get('attributedOrderRateNewToBrand14d')
+        self.NewOrders = json_report.get('attributedOrdersNewToBrand14d')
+        self.NewOrdersRate = json_report.get('attributedOrdersNewToBrandPercentage14d')
+        self.NewUnits = json_report.get('attributedUnitsOrderedNewToBrand14d')
+        self.NewUnitsRate = json_report.get('attributedUnitsOrderedNewToBrandPercentage14d')
+        self.NewRev = json_report.get('attributedSalesNewToBrand14d')
+        self.NewRevRate = json_report.get('attributedSalesNewToBrandPercentage14d')
 
 SpBase = declarative_base(cls=ModelSpReports)
 class AprSpCampaigns(SpBase):
 
     __tablename__ = 'Apr_Sp_Campaigns'
 
+    PortfolioId = Column(Integer)
+    PortfolioName = Column(String(200))
     Status = Column(String(20))
     Budget = Column(Float(6,2))
     BidPlus = Column(Boolean)
 
     def __init__(self, SnapDate, Country, json_report):
         ModelSpReports.__init__(self, SnapDate, Country, json_report)
+        self.PortfolioId = json_report.get('portfolioId')
+        self.PortfolioName = json_report.get('portfolioName')
         self.Status = json_report.get('campaignStatus', '')
         self.Budget = json_report.get('campaignBudget', 0.0)
         self.BidPlus = json_report.get('bidPlus', 0)
@@ -166,6 +185,7 @@ class AprSpTargets(SpBase):
     TargetingText = Column(String(400))
     TargetingType = Column(String(100))
     TargetingExpression = Column(String(400))
+    Query = Column(String(400))
 
     def __init__(self, SnapDate, Country, json_report):
         ModelSpReports.__init__(self, SnapDate, Country, json_report)
@@ -173,6 +193,7 @@ class AprSpTargets(SpBase):
         self.TargetingText = json_report.get('targetingText', '')
         self.TargetingType = json_report.get('targetingType', '')
         self.TargetingExpression = json_report.get('targetingExpression', '')
+        self.Query = json_report.get('query', '')
 
 HsaBase = declarative_base(cls=ModelHsaReports)
 class AprHsaCampaigns(HsaBase):
@@ -206,12 +227,14 @@ class AprHsaKeywords(HsaBase):
     KeywordId = Column(Integer)
     KeywordText = Column(String(400))
     MatchType = Column(String(20))
+    Query = Column(String(400))
 
     def __init__(self, SnapDate, Country, json_report):
         ModelHsaReports.__init__(self, SnapDate, Country, json_report)
         self.KeywordId = json_report.get('keywordId', 0)
         self.KeywordText = json_report.get('keywordText', '')
         self.MatchType = json_report.get('matchType', '')
+        self.Query = json_report.get('query', '')
 
 
 

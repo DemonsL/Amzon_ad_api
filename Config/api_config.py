@@ -17,12 +17,12 @@ regions = {
     'fe': 'advertising-api-fe.amazon.com'
 }
 report_type = {
-    'rp_scope': ['us1223366941512513', 'ca4395156076169305'],
+    'rp_scope': ['US1223366941512513', 'CA4395156076169305'],
     'type': ['sp', 'hsa'],
     'sp_keyword_seg': ['query', 'placement'],
     'sp': ['campaigns', 'adGroups', 'keywords', 'productAds', 'targets'],
     'hsa': ['campaigns', 'adGroups', 'keywords'],
-    'campaigns': ['bidPlus', 'campaignStatus', 'campaignBudget'],
+    'campaigns': ['portfolioId', 'portfolioName', 'bidPlus', 'campaignStatus', 'campaignBudget'],
     'adGroups': ['adGroupName', 'adGroupId'],
     'keywords': [ 'keywordId', 'keywordText', 'matchType'],
     'productAds': ['adGroupName', 'adGroupId', 'currency', 'asin', 'sku'],

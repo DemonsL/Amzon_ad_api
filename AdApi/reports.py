@@ -25,7 +25,7 @@ class Reports(AdClient):
             'reportDate': params.get('reportDate'),
             'metrics': ','.join(metrics_list)
         }
-        if 'sp/keywords' in interface:
+        if ('keywords' or 'targets') in interface:
             payload['segment'] = 'query'
         return self.excute_req(interface, method='POST', scope=self.scope, payload=payload)
 
