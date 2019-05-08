@@ -5,10 +5,8 @@ import json
 import gzip
 import time
 import datetime
-import pymysql
 from Models import reports
 from AdApi.reports import Reports
-from Config import db
 from Config.api_config import report_type, account
 from Timers.timers_handler import TimersHandler
 
@@ -17,31 +15,29 @@ class DownloadReports:
     定时批量下载报告
     """
 
-    def delete_report_sql(self, table_name, ids):
-        conn = pymysql.connect(host=db.Host, port=db.Port, user=db.User, passwd=db.Passwd, db=db.DB, charset=db.CharSet)
-        cursor = conn.cursor()
-        for id in ids:
-            excute_sql = 'DELETE FROM {tb_name} WHERE ID = {tb_id}'.format(
-                tb_name = table_name,
-                tb_id = id)
-            cursor.execute(excute_sql)
-        cursor.close()
+    def get_report_country_for_date(self, table_name, report_date):
+        session = reports.DBSession()
+        report_excute = eval('reports.{}'.format(table_name))
+        mkps = session.query(report_excute, report_excute.Country)\
+                      .filter_by(SnapDate=report_date).all()
+        mkps = set([(m[1]) for m in mkps])
+        return list(mkps)
 
     def get_report_date(self, table_name):
         session = reports.DBSession()
         report_excute = eval('reports.{}'.format(table_name))
-        snap_report = session.query(report_excute, report_excute.ID, report_excute.SnapDate).all()
-        snap_date = set([''.join(str(d[2]).split('-')) for d in snap_report])
-        snap_ids = [d[1] for d in snap_report]
-        return list(snap_date), snap_ids
+        snap_report = session.query(report_excute, report_excute.SnapDate).all()
+        snap_date = set([''.join(str(d[1]).split('-')) for d in snap_report])
+        return list(snap_date)
 
-    # def del_reports_for_date(self, table_name, snap_ids):
-    #     session = reports.DBSession()
-    #     report_excute = eval('reports.{}'.format(table_name))
-    #     for snap_id in snap_ids:
-    #         record = session.query(report_excute).filter_by(ID=snap_id).all()
-    #         session.delete(record[0])
-    #     session.commit()
+    def del_reports_for_date(self, table_name, snap_date, country):
+        session = reports.DBSession()
+        report_excute = eval('reports.{}'.format(table_name))
+        records = session.query(report_excute).filter_by(SnapDate=snap_date,
+                                                         Country=country).all()
+        for record in records:
+            session.delete(record)
+        session.commit()
 
     def add_report_to_sql(self, json_b, table_name, country, params):
         report_json = json.loads(json_b.decode())
@@ -80,19 +76,20 @@ class DownloadReports:
     def report_to_sql(self, client, params):
         record_t = params.get('record_type')
         table_name = 'Apr' + params.get('spon').capitalize() + record_t[0].upper() + record_t[1:]
-        sql_table_name = 'Apr' + '_' + params.get('spon').capitalize() + '_' + record_t[0].upper() + record_t[1:]
         country = params.get('mkp')
         report_date = params.get('reportDate')
-        snap_dates, snap_ids = self.get_report_date(table_name)
+
 
         report_byte = self.download_report(client, params)
         try:
             self.add_report_to_sql(report_byte, table_name, country, params)
 
-            if report_date in snap_dates:
+            snap_dates = self.get_report_date(table_name)
+            mkps = self.get_report_country_for_date(table_name, report_date)
+            if (report_date in snap_dates) and (country in mkps):
                 try:
                     print('delete old data...')
-                    self.delete_report_sql(sql_table_name, snap_ids)
+                    self.del_reports_for_date(table_name, report_date, country)
                 except Exception as e:
                     print('DeleteSqlError: ' + str(e))
         except Exception as e:
@@ -140,6 +137,9 @@ if __name__ == '__main__':
     args = get_clients()
 
     timer = datetime.datetime(2019, 5, 8, 14, 41)
-    dw_report_timer = TimersHandler(timer, dw_report.run, args)
+    dw_report_timer = TimersHandler(timer, dw_report.run, args[0])
+    dw_report_timer.excute_job()
+
+    dw_report_timer = TimersHandler(timer, dw_report.run, args[1])
     dw_report_timer.excute_job()
 

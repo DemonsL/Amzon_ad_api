@@ -15,14 +15,13 @@ class TimersHandler:
 
     def excute_job(self):
         sched = BlockingScheduler()
-        for arg in self.args:
-            sched.add_job(
-                func=self.job,
-                args=arg,
-                trigger=IntervalTrigger(
-                    start_date=self.timer,
-                    days=1
-                ))
+        sched.add_job(
+            func=self.job,
+            args=self.args,
+            trigger=IntervalTrigger(
+                start_date=self.timer,
+                days=1
+            ))
         sched.start()
 
 
