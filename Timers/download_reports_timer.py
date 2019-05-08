@@ -80,6 +80,7 @@ class DownloadReports:
     def report_to_sql(self, client, params):
         record_t = params.get('record_type')
         table_name = 'Apr' + params.get('spon').capitalize() + record_t[0].upper() + record_t[1:]
+        sql_table_name = 'Apr' + '_' + params.get('spon').capitalize() + '_' + record_t[0].upper() + record_t[1:]
         country = params.get('mkp')
         report_date = params.get('reportDate')
         snap_dates, snap_ids = self.get_report_date(table_name)
@@ -91,7 +92,7 @@ class DownloadReports:
             if report_date in snap_dates:
                 try:
                     print('delete old data...')
-                    self.delete_report_sql(table_name, snap_ids)
+                    self.delete_report_sql(sql_table_name, snap_ids)
                 except Exception as e:
                     print('DeleteSqlError: ' + str(e))
         except Exception as e:
