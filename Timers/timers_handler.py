@@ -1,6 +1,5 @@
 # encoding: utf-8
-import tornado.ioloop
-from apscheduler.schedulers.tornado import TornadoScheduler
+from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 
 
@@ -15,7 +14,7 @@ class TimersHandler:
         self.args = args
 
     def excute_job(self):
-        sched = TornadoScheduler()
+        sched = BlockingScheduler()
         for arg in self.args:
             sched.add_job(
                 func=self.job,
@@ -25,10 +24,5 @@ class TimersHandler:
                     days=1
                 ))
         sched.start()
-
-        try:
-            tornado.ioloop.IOLoop.current().start()
-        except (KeyboardInterrupt, SystemExit):
-            sched.shutdown()
 
 
