@@ -22,13 +22,15 @@ class DownloadReports:
         snap_date = set([''.join(str(d[1]).split('-')) for d in snap_date])
         return list(snap_date)
 
-    def del_reports_for_date(self, table_name, report_date):
+    def del_reports_for_date(self, table_name, report_date, country):
         session = reports.DBSession()
         report_excute = eval('reports.{}'.format(table_name))
-        records = session.query(report_excute).filter_by(SnapDate=report_date).all()
-        for rec in records:
-            session.delete(rec)
-        session.commit()
+        records = session.query(report_excute).filter_by(SnapDate=report_date,
+                                                         Country=country).all()
+        if records:
+            for rec in records:
+                session.delete(rec)
+            session.commit()
 
     def add_report_to_sql(self, json_b, table_name, country, params):
         report_json = json.loads(json_b.decode())
@@ -74,7 +76,7 @@ class DownloadReports:
         if report_date in snap_dates:
             try:
                 print('delete old data...')
-                self.del_reports_for_date(table_name, report_date)
+                self.del_reports_for_date(table_name, report_date, country)
             except Exception as e:
                 print('DeleteSqlError: ' + str(e))
         report_byte = self.download_report(client, params)
@@ -124,7 +126,7 @@ if __name__ == '__main__':
     dw_report = DownloadReports()
     args = get_clients()
 
-    timer = datetime.datetime(2019, 5, 7, 13, 51)
+    timer = datetime.datetime(2019, 5, 8, 12, 17)
     dw_report_timer = TimersHandler(timer, dw_report.run, args)
     dw_report_timer.excute_job()
 
