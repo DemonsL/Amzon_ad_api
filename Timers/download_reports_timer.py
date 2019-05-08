@@ -78,20 +78,19 @@ class DownloadReports:
         table_name = 'Apr' + params.get('spon').capitalize() + record_t[0].upper() + record_t[1:]
         country = params.get('mkp')
         report_date = params.get('reportDate')
-
-
+        # 删除旧数据
+        snap_dates = self.get_report_date(table_name)
+        mkps = self.get_report_country_for_date(table_name, report_date)
+        if (report_date in snap_dates) and (country in mkps):
+            try:
+                print('delete old data...')
+                self.del_reports_for_date(table_name, report_date, country)
+            except Exception as e:
+                print('DeleteSqlError: ' + str(e))
+        # 添加新数据
         report_byte = self.download_report(client, params)
         try:
             self.add_report_to_sql(report_byte, table_name, country, params)
-
-            snap_dates = self.get_report_date(table_name)
-            mkps = self.get_report_country_for_date(table_name, report_date)
-            if (report_date in snap_dates) and (country in mkps):
-                try:
-                    print('delete old data...')
-                    self.del_reports_for_date(table_name, report_date, country)
-                except Exception as e:
-                    print('DeleteSqlError: ' + str(e))
         except Exception as e:
             print('AddSqlError: ' + str(e))
 
