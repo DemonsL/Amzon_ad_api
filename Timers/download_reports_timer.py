@@ -64,7 +64,7 @@ class DownloadReports:
         reports_dict = dict(json.loads(reports.text))
         report_id = reports_dict.get('reportId', None)
         if report_id:
-            time.sleep(20)                          # 下载报告前，需要报告生成成功
+            time.sleep(15)                          # 下载报告前，需要报告生成成功
             report = client.get_report(report_id)
 
             try:
@@ -103,9 +103,10 @@ class DownloadReports:
                 self.report_to_sql(client, params)
 
     def run(self, client, params):
+        print('Report download start...')
         client.do_refresh_token()
         interval_day = 2
-        while interval_day < 32:    # 更新前30天内报告数据
+        while interval_day < 62:    # 更新前30天内报告数据
             report_date = datetime.datetime.now()
             report_date -= datetime.timedelta(days=interval_day)
             report_date = report_date.strftime('%Y%m%d')
@@ -113,6 +114,7 @@ class DownloadReports:
             params['reportDate'] = str(report_date)
             self.batch_download_reports(client, params)
             interval_day += 1
+        print('Report download end!')
 
 
 def get_clients():
@@ -135,10 +137,7 @@ if __name__ == '__main__':
     dw_report = DownloadReports()
     args = get_clients()
 
-    timer = datetime.datetime(2019, 5, 8, 14, 41)
-    dw_report_timer = TimersHandler(timer, dw_report.run, args[0])
-    dw_report_timer.excute_job()
-
-    dw_report_timer = TimersHandler(timer, dw_report.run, args[1])
+    # timer = datetime.datetime(2019, 5, 8, 16, 15)
+    dw_report_timer = TimersHandler(datetime.datetime.now() + datetime.timedelta(minutes=1), dw_report.run, args)
     dw_report_timer.excute_job()
 

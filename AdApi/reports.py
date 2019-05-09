@@ -17,15 +17,12 @@ class Reports(AdClient):
         )
 
         rp_common = '{}_common'.format(spon)
-        rt = report_type.get(record_type)
-        if spon == 'hsa':
-            rt = rt[1:]
-        metrics_list = rt + report_type.get(rp_common)
+        metrics_list = report_type.get(record_type) + report_type.get(rp_common)
         payload = {
             'reportDate': params.get('reportDate'),
             'metrics': ','.join(metrics_list)
         }
-        if ('keywords' or 'targets') in interface:
+        if ('sp/keywords' or 'targets') in interface:
             payload['segment'] = 'query'
         return self.excute_req(interface, method='POST', scope=self.scope, payload=payload)
 
