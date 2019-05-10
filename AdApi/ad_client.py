@@ -1,4 +1,4 @@
-# encoding:utf-8
+# coding:utf-8
 import json
 import requests
 from Config.api_config import api_version, regions, oauth_url

@@ -1,4 +1,4 @@
-# encoding:utf-8
+# coding:utf-8
 # import pandas as pd
 #
 # def convert_json_to_csv(json_file, file_name):

@@ -1,4 +1,4 @@
-# encoding: utf-8
+# coding: utf-8
 import tornado.ioloop
 from apscheduler.schedulers.tornado import TornadoScheduler
 from apscheduler.triggers.interval import IntervalTrigger

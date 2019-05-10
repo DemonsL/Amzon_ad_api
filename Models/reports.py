@@ -1,4 +1,4 @@
-# encoding: utf-8
+# coding: utf-8
 from Config import db
 from sqlalchemy import Column, String, Integer, Float, Boolean, DateTime, create_engine
 from sqlalchemy.orm import sessionmaker

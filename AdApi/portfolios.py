@@ -1,4 +1,4 @@
-# encoding: utf-8
+# coding: utf-8
 from AdApi.ad_client import AdClient
 
 
