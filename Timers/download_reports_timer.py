@@ -10,10 +10,12 @@ from AdApi.reports import Reports
 from Config.api_config import report_type, account
 from Timers.timers_handler import TimersHandler
 
+
 class DownloadReports:
     """
     定时批量下载报告
     """
+    time_fmt = '%Y-%m-%d %H:%M:%S'
 
     def get_report_country_for_date(self, table_name, report_date):
         session = reports.DBSession()
@@ -56,7 +58,7 @@ class DownloadReports:
         if 'UNAUTHORIZED' in reports.text:
             client.do_refresh_token()
             reports = client.create_report(params)
-        print('POST_RESP: ' + reports.text)
+        print('{} POST_RESP: '.format(datetime.datetime.now().strftime(self.time_fmt)) + reports.text)
         return reports
 
     def download_report(self, client, params):
@@ -69,6 +71,7 @@ class DownloadReports:
 
             try:
                 report = gzip.decompress(report.content)  # 解压缩
+                print('{} GET Success'.format(datetime.datetime.now().strftime(self.time_fmt)))
             except Exception as e:
                 print('Decompress Error: ' + str(e))
             return report
@@ -83,7 +86,7 @@ class DownloadReports:
         mkps = self.get_report_country_for_date(table_name, report_date)
         if (report_date in snap_dates) and (country in mkps):
             try:
-                print('delete old data...')
+                print('delete {} old data...'.format(country))
                 self.del_reports_for_date(table_name, report_date, country)
             except Exception as e:
                 print('DeleteSqlError: ' + str(e))
@@ -103,41 +106,55 @@ class DownloadReports:
                 self.report_to_sql(client, params)
 
     def run(self, client, params):
-        print('Report download start...')
+        print('{} Report download start...'.format(datetime.datetime.now().strftime(self.time_fmt)))
+        print('Report Marketplace: ', params.get('mkp'))
         client.do_refresh_token()
         interval_day = 2
-        while interval_day < 62:    # 更新前30天内报告数据
+        while interval_day < 32:    # 更新前30天内报告数据
             report_date = datetime.datetime.now()
             report_date -= datetime.timedelta(days=interval_day)
             report_date = report_date.strftime('%Y%m%d')
-            print(report_date)
+            print('Report Date: ', report_date)
             params['reportDate'] = str(report_date)
             self.batch_download_reports(client, params)
             interval_day += 1
-        print('Report download end!')
+        print('Marketplace: ', params.get('mkp'))
+        print('{} Report download end!'.format(datetime.datetime.now().strftime(self.time_fmt)))
 
 
-def get_clients():
+# def get_clients():
+#     client_id = account.get('client_id')
+#     client_secret = account.get('client_secret')
+#     access_token = account.get('access_token')
+#     refresh_token = account.get('refresh_token')
+#     rp_scope = report_type.get('rp_scope')
+#     clients = []
+#     for scope in rp_scope:  # marketplace
+#         params = {}
+#         params['mkp'] = scope[:2]
+#         params['scope'] = scope[2:]
+#         report_client = Reports(client_id, client_secret, access_token, refresh_token, params['scope'])
+#         clients.append([report_client, params])
+#     return clients
+
+
+if __name__ == '__main__':
+
     client_id = account.get('client_id')
     client_secret = account.get('client_secret')
     access_token = account.get('access_token')
     refresh_token = account.get('refresh_token')
     rp_scope = report_type.get('rp_scope')
-    clients = []
+
+    dw_report = DownloadReports()
     for scope in rp_scope:  # marketplace
         params = {}
         params['mkp'] = scope[:2]
         params['scope'] = scope[2:]
         report_client = Reports(client_id, client_secret, access_token, refresh_token, params['scope'])
-        clients.append([report_client, params])
-    return clients
-
-
-if __name__ == '__main__':
-    dw_report = DownloadReports()
-    args = get_clients()
+        dw_report.run(report_client, params)
 
     # timer = datetime.datetime(2019, 5, 8, 16, 15)
-    dw_report_timer = TimersHandler(datetime.datetime.now() + datetime.timedelta(minutes=1), dw_report.run, args)
-    dw_report_timer.excute_job()
+    # dw_report_timer = TimersHandler(datetime.datetime.now() + datetime.timedelta(minutes=1), dw_report.run, args)
+    # dw_report_timer.excute_job()
 
