@@ -1,6 +1,6 @@
 # coding: utf-8
 from Config import db
-from sqlalchemy import Column, String, Integer, Float, Boolean, DateTime, create_engine
+from sqlalchemy import Column, String, Integer, Float, DECIMAL, Boolean, DateTime, create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -30,14 +30,14 @@ class ModelSpReports:
     Day14Orders = Column(Integer)
     TotalDay30Orders = Column(Integer)
     Day30Orders = Column(Integer)
-    TotalDayRev = Column(Float(6, 2))
-    DayRev = Column(Float(6, 2))
-    TotalDay7Rev = Column(Float(6, 2))
-    Day7Rev = Column(Float(6, 2))
-    TotalDay14Rev = Column(Float(6, 2))
-    Day14Rev = Column(Float(6, 2))
-    TotalDay30Rev = Column(Float(6, 2))
-    Day30Rev = Column(Float(6, 2))
+    TotalDayRev = Column(DECIMAL(8, 2))
+    DayRev = Column(DECIMAL(8, 2))
+    TotalDay7Rev = Column(DECIMAL(8, 2))
+    Day7Rev = Column(DECIMAL(8, 2))
+    TotalDay14Rev = Column(DECIMAL(8, 2))
+    Day14Rev = Column(DECIMAL(8, 2))
+    TotalDay30Rev = Column(DECIMAL(8, 2))
+    Day30Rev = Column(DECIMAL(8, 2))
 
     def __init__(self, SnapDate, Country, json_report):
         self.SnapDate = SnapDate
@@ -118,7 +118,7 @@ class AprSpCampaigns(SpBase):
     PortfolioId = Column(Integer)
     PortfolioName = Column(String(200))
     Status = Column(String(20))
-    Budget = Column(Float(6,2))
+    Budget = Column(DECIMAL(8, 2))
     BidPlus = Column(Boolean)
 
     def __init__(self, SnapDate, Country, json_report):
