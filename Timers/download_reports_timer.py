@@ -5,17 +5,29 @@ import json
 import gzip
 import time
 import datetime
+import logging
 from Models import reports
 from AdApi.reports import Reports
 from Config.api_config import report_type, account
-from Timers.timers_handler import TimersHandler
+# from Timers.timers_handler import TimersHandler
 
+
+formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
+file_name = '/home/develop/logs/adrp_logs/{}.log'.format(datetime.date.today())
+log = logging.getLogger()
+log.setLevel(logging.INFO)
+
+
+fh = logging.FileHandler(file_name, mode='a+')
+fh.setLevel(logging.DEBUG)
+fh.setFormatter(formatter)
+log.addHandler(fh)
 
 class DownloadReports:
     """
     定时批量下载报告
     """
-    time_fmt = '%Y-%m-%d %H:%M:%S'
+    # time_fmt = '%Y-%m-%d %H:%M:%S'
 
     def get_report_country_for_date(self, table_name, report_date):
         session = reports.DBSession()
@@ -58,7 +70,8 @@ class DownloadReports:
         if 'UNAUTHORIZED' in reports.text:
             client.do_refresh_token()
             reports = client.create_report(params)
-        print('{} POST_RESP: '.format(datetime.datetime.now().strftime(self.time_fmt)) + reports.text)
+        # print('{} POST_RESP: '.format(datetime.datetime.now().strftime(self.time_fmt)) + reports.text)
+        log.info('POST_RESP: %s', reports.text)
         return reports
 
     def download_report(self, client, params):
@@ -71,9 +84,11 @@ class DownloadReports:
 
             try:
                 report = gzip.decompress(report.content)  # 解压缩
-                print('{} GET Success'.format(datetime.datetime.now().strftime(self.time_fmt)))
+                # print('{} GET Success'.format(datetime.datetime.now().strftime(self.time_fmt)))
+                log.info('GET Success!')
             except Exception as e:
-                print('Decompress Error: ' + str(e))
+                # print('Decompress Error: ' + str(e))
+                log.error('Decompress Error: %s', e)
             return report
 
     def report_to_sql(self, client, params):
@@ -86,16 +101,19 @@ class DownloadReports:
         mkps = self.get_report_country_for_date(table_name, report_date)
         if (report_date in snap_dates) and (country in mkps):
             try:
-                print('delete {} old data...'.format(country))
+                # print('delete {} old data...'.format(country))
+                log.info('Delete {} old data...'.format(country))
                 self.del_reports_for_date(table_name, report_date, country)
             except Exception as e:
-                print('DeleteSqlError: ' + str(e))
+                # print('DeleteSqlError: ' + str(e))
+                log.error('DeleteSqlError: %s', e)
         # 添加新数据
         report_byte = self.download_report(client, params)
         try:
             self.add_report_to_sql(report_byte, table_name, country, params)
         except Exception as e:
-            print('AddSqlError: ' + str(e))
+            # print('AddSqlError: ' + str(e))
+            log.error('AddSqlError: %s', e)
 
     def batch_download_reports(self, client, params):
         for rp_type in report_type.get('type'):      # sp or hsa
@@ -106,36 +124,26 @@ class DownloadReports:
                 self.report_to_sql(client, params)
 
     def run(self, client, params):
-        print('{} Report download start...'.format(datetime.datetime.now().strftime(self.time_fmt)))
-        print('Report Marketplace: ', params.get('mkp'))
+        # print('{} Report download start...'.format(datetime.datetime.now().strftime(self.time_fmt)))
+        # print('Report Marketplace: ', params.get('mkp'))
+        log.info('Report download start...')
+        log.info('Report Marketplace: %s', params.get('mkp'))
         client.do_refresh_token()
         interval_day = 2
         while interval_day < 32:    # 更新前30天内报告数据
             report_date = datetime.datetime.now()
             report_date -= datetime.timedelta(days=interval_day)
             report_date = report_date.strftime('%Y%m%d')
-            print('Report Date: ', report_date)
+            # print('Report Date: ', report_date)
+            log.info('Report Date: %s', report_date)
             params['reportDate'] = str(report_date)
             self.batch_download_reports(client, params)
             interval_day += 1
-        print('Marketplace: ', params.get('mkp'))
-        print('{} Report download end!'.format(datetime.datetime.now().strftime(self.time_fmt)))
+        # print('Marketplace: ', params.get('mkp'))
+        # print('{} Report download end!'.format(datetime.datetime.now().strftime(self.time_fmt)))
+        log.info('Marketplace: %s', params.get('mkp'))
+        log.info('Report download end!')
 
-
-# def get_clients():
-#     client_id = account.get('client_id')
-#     client_secret = account.get('client_secret')
-#     access_token = account.get('access_token')
-#     refresh_token = account.get('refresh_token')
-#     rp_scope = report_type.get('rp_scope')
-#     clients = []
-#     for scope in rp_scope:  # marketplace
-#         params = {}
-#         params['mkp'] = scope[:2]
-#         params['scope'] = scope[2:]
-#         report_client = Reports(client_id, client_secret, access_token, refresh_token, params['scope'])
-#         clients.append([report_client, params])
-#     return clients
 
 
 if __name__ == '__main__':
