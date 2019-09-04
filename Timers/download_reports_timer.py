@@ -70,7 +70,6 @@ class DownloadReports:
         if 'UNAUTHORIZED' in reports.text:
             client.do_refresh_token()
             reports = client.create_report(params)
-        # print('{} POST_RESP: '.format(datetime.datetime.now().strftime(self.time_fmt)) + reports.text)
         log.info('POST_RESP: %s', reports.text)
         return reports
 
@@ -84,10 +83,8 @@ class DownloadReports:
 
             try:
                 report = gzip.decompress(report.content)  # 解压缩
-                # print('{} GET Success'.format(datetime.datetime.now().strftime(self.time_fmt)))
                 log.info('GET Success!')
             except Exception as e:
-                # print('Decompress Error: ' + str(e))
                 log.error('Decompress Error: %s', e)
             return report
 
@@ -101,18 +98,15 @@ class DownloadReports:
         mkps = self.get_report_country_for_date(table_name, report_date)
         if (report_date in snap_dates) and (country in mkps):
             try:
-                # print('delete {} old data...'.format(country))
                 log.info('Delete {} old data...'.format(country))
                 self.del_reports_for_date(table_name, report_date, country)
             except Exception as e:
-                # print('DeleteSqlError: ' + str(e))
                 log.error('DeleteSqlError: %s', e)
         # 添加新数据
         report_byte = self.download_report(client, params)
         try:
             self.add_report_to_sql(report_byte, table_name, country, params)
         except Exception as e:
-            # print('AddSqlError: ' + str(e))
             log.error('AddSqlError: %s', e)
 
     def batch_download_reports(self, client, params):
@@ -124,8 +118,6 @@ class DownloadReports:
                 self.report_to_sql(client, params)
 
     def run(self, client, params):
-        # print('{} Report download start...'.format(datetime.datetime.now().strftime(self.time_fmt)))
-        # print('Report Marketplace: ', params.get('mkp'))
         log.info('Report download start...')
         log.info('Report Marketplace: %s', params.get('mkp'))
         client.do_refresh_token()
@@ -134,13 +126,10 @@ class DownloadReports:
             report_date = datetime.datetime.now()
             report_date -= datetime.timedelta(days=interval_day)
             report_date = report_date.strftime('%Y%m%d')
-            # print('Report Date: ', report_date)
             log.info('Report Date: %s', report_date)
             params['reportDate'] = str(report_date)
             self.batch_download_reports(client, params)
             interval_day += 1
-        # print('Marketplace: ', params.get('mkp'))
-        # print('{} Report download end!'.format(datetime.datetime.now().strftime(self.time_fmt)))
         log.info('Marketplace: %s', params.get('mkp'))
         log.info('Report download end!')
 

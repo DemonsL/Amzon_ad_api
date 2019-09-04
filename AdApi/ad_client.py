@@ -1,6 +1,5 @@
 # coding:utf-8
 import json
-import datetime
 import requests
 from Config.api_config import api_version, regions, oauth_url
 
@@ -59,7 +58,7 @@ class AdClient:
             version=api_version,
             interface=interface
         )
-        print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ' ' + method + ' '+ url)
+        # print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ' ' + method + ' '+ url)
         if scope:
             headers['Amazon-Advertising-API-Scope'] = scope
         if method == 'GET':
