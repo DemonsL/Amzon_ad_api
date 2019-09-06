@@ -18,15 +18,18 @@ regions = {
 }
 report_type = {
     'rp_scope': ['US1223366941512513', 'CA4395156076169305'],
-    'type': ['sp', 'hsa'],
+    'type': ['sp', 'hsa','asin'],
     'sp_keyword_seg': ['query', 'placement'],
     'sp': ['campaigns', 'adGroups', 'keywords', 'productAds', 'targets'],
     'hsa': ['campaigns', 'adGroups', 'keywords'],
+    'asin': ['asins'],
     'campaigns': ['portfolioId', 'portfolioName', 'bidPlus', 'campaignStatus', 'campaignBudget'],
     'adGroups': ['adGroupName', 'adGroupId'],
     'keywords': [ 'keywordId', 'keywordText', 'matchType'],
     'productAds': ['adGroupName', 'adGroupId', 'currency', 'asin', 'sku'],
     'targets': ['targetId', 'targetingExpression', 'targetingText', 'targetingType'],
+    'asins': ['adGroupName', 'adGroupId', 'keywordId', 'keywordText', 'asin', 'otherAsin', 'sku', 'currency',
+              'matchType'],
     'sp_common': ['campaignId', 'campaignName', 'impressions', 'clicks', 'cost',
                   'attributedConversions1d', 'attributedConversions7d',
                   'attributedConversions14d', 'attributedConversions30d',
@@ -43,7 +46,8 @@ report_type = {
                    'attributedConversions14dSameSKU', 'attributedOrdersNewToBrand14d',
                    'attributedOrdersNewToBrandPercentage14d', 'attributedOrderRateNewToBrand14d',
                    'attributedSalesNewToBrand14d', 'attributedSalesNewToBrandPercentage14d',
-                   'attributedUnitsOrderedNewToBrand14d','attributedUnitsOrderedNewToBrandPercentage14d']
-    # 'asins': ['adGroupName', 'adGroupId', 'keywordId', 'keywordText', 'asin', 'otherAsin',
-    #           'sku', 'currency', 'matchType'],
+                   'attributedUnitsOrderedNewToBrand14d','attributedUnitsOrderedNewToBrandPercentage14d'],
+    'asin_common': ['campaignName', 'campaignId', 'attributedUnitsOrdered1dOtherSKU', 'attributedUnitsOrdered7dOtherSKU',
+                    'attributedUnitsOrdered14dOtherSKU', 'attributedUnitsOrdered30dOtherSKU', 'attributedSales1dOtherSKU',
+                    'attributedSales7dOtherSKU', 'attributedSales14dOtherSKU', 'attributedSales30dOtherSKU']
 }

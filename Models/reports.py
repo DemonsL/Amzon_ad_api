@@ -236,5 +236,55 @@ class AprHsaKeywords(HsaBase):
         self.MatchType = json_report.get('matchType', '')
         self.Query = json_report.get('query', '')
 
+Base = declarative_base()
+class AprAsinAsins(Base):
+
+    __tablename__ = 'Apr_Sp_Asin'
+
+    ID = Column(Integer)
+    SnapDate = Column(DateTime, primary_key=True)
+    Country = Column(String(10), primary_key=True)
+    Asin = Column(String(20), primary_key=True)
+    Sku = Column(String(40))
+    OtherAsin = Column(String(20), primary_key=True)
+    KeywordId = Column(Integer, primary_key=True)
+    KeywordText = Column(String(400))
+    MatchType = Column(String(20))
+    CampaignId = Column(Integer)
+    CampaignName = Column(String(400))
+    AdGroupId = Column(Integer)
+    AdGroupName = Column(String(400))
+    Currency = Column(String(10))
+    OtherDayUnits = Column(Integer)
+    OtherDay7Units = Column(Integer)
+    OtherDay14Units = Column(Integer)
+    OtherDay30Units = Column(Integer)
+    OtherDayRev = Column(DECIMAL(11,2))
+    OtherDay7Rev = Column(DECIMAL(11, 2))
+    OtherDay14Rev = Column(DECIMAL(11, 2))
+    OtherDay30Rev = Column(DECIMAL(11, 2))
+
+    def __init__(self, SnapDate, Country, json_report):
+        self.SnapDate = SnapDate
+        self.Country = Country
+        self.Asin = json_report.get('asin')
+        self.Sku = json_report.get('sku')
+        self.OtherAsin = json_report.get('otherAsin')
+        self.KeywordId = json_report.get('keywordId')
+        self.KeywordText = json_report.get('keywordText')
+        self.MatchType = json_report.get('matchType')
+        self.CampaignId = json_report.get('campaignId')
+        self.CampaignName = json_report.get('campaignName')
+        self.AdGroupId = json_report.get('adGroupId')
+        self.AdGroupName = json_report.get('adGroupName')
+        self.Currency = json_report.get('currency')
+        self.OtherDayUnits = json_report.get('attributedUnitsOrdered1dOtherSKU')
+        self.OtherDay7Units = json_report.get('attributedUnitsOrdered7dOtherSKU')
+        self.OtherDay14Units = json_report.get('attributedUnitsOrdered14dOtherSKU')
+        self.OtherDay30Units = json_report.get('attributedUnitsOrdered30dOtherSKU')
+        self.OtherDayRev = json_report.get('attributedSales1dOtherSKU')
+        self.OtherDay7Rev = json_report.get('attributedSales7dOtherSKU')
+        self.OtherDay14Rev = json_report.get('attributedSales14dOtherSKU')
+        self.OtherDay30Rev = json_report.get('attributedSales30dOtherSKU')
 
 

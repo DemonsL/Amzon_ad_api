@@ -17,11 +17,15 @@ file_name = '/home/develop/logs/adrp_logs/{}.log'.format(datetime.date.today())
 log = logging.getLogger()
 log.setLevel(logging.INFO)
 
-
 fh = logging.FileHandler(file_name, mode='a+')
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 log.addHandler(fh)
+
+ch = logging.StreamHandler()
+ch.setLevel(logging.INFO)
+ch.setFormatter(formatter)
+log.addHandler(ch)
 
 class DownloadReports:
     """
