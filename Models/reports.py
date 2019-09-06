@@ -18,9 +18,13 @@ class ModelSpReports:
     Impressions = Column(Integer)
     Clicks = Column(Integer)
     Cost = Column(DECIMAL(10, 2))
+    TotalDayUnits = Column(Integer)
     DayUnits = Column(Integer)
+    TotalDay7Units = Column(Integer)
     Day7Units = Column(Integer)
+    TotalDay14Units = Column(Integer)
     Day14Units = Column(Integer)
+    TotalDay30Units = Column(Integer)
     Day30Units = Column(Integer)
     TotalDayOrders = Column(Integer)
     DayOrders = Column(Integer)
@@ -47,10 +51,14 @@ class ModelSpReports:
         self.Impressions = json_report.get('impressions', 0)
         self.Clicks = json_report.get('clicks', 0)
         self.Cost = json_report.get('cost', 0.0)
-        self.DayUnits = json_report.get('attributedUnitsOrdered1d', 0)
-        self.Day7Units = json_report.get('attributedUnitsOrdered7d', 0)
-        self.Day14Units = json_report.get('attributedUnitsOrdered14d', 0)
-        self.Day30Units = json_report.get('attributedUnitsOrdered30d', 0)
+        self.TotalDayUnits = json_report.get('attributedUnitsOrdered1d', 0)
+        self.DayUnits = json_report.get('attributedUnitsOrdered1dSameSKU', 0)
+        self.TotalDay7Units = json_report.get('attributedUnitsOrdered7d')
+        self.Day7Units = json_report.get('attributedUnitsOrdered7dSameSKU', 0)
+        self.TotalDay14Units = json_report.get('attributedUnitsOrdered14d')
+        self.Day14Units = json_report.get('attributedUnitsOrdered14dSameSKU', 0)
+        self.TotalDay30Units = json_report.get('attributedUnitsOrdered30d')
+        self.Day30Units = json_report.get('attributedUnitsOrdered30dSameSKU', 0)
         self.TotalDayOrders = json_report.get('attributedConversions1d', 0)
         self.DayOrders = json_report.get('attributedConversions1dSameSKU', 0)
         self.TotalDay7Orders = json_report.get('attributedConversions7d', 0)
@@ -145,6 +153,8 @@ class AprSpKeywords(SpBase):
 
     __tablename__ = 'Apr_Sp_Keywords'
 
+    AdGroupId = Column(Integer)
+    AdGroupName = Column(String(400))
     KeywordId = Column(Integer)
     Keyword = Column(String(400))
     MatchType = Column(String(20))
@@ -152,6 +162,8 @@ class AprSpKeywords(SpBase):
 
     def __init__(self, SnapDate, Country, json_report):
         ModelSpReports.__init__(self, SnapDate, Country, json_report)
+        self.AdGroupId = json_report.get('adGroupId', 0)
+        self.AdGroupName = json_report.get('adGroupName', '')
         self.KeywordId = json_report.get('keywordId', 0)
         self.Keyword = json_report.get('keywordText', '')
         self.MatchType = json_report.get('matchType', '')
@@ -181,6 +193,8 @@ class AprSpTargets(SpBase):
 
     __tablename__ = 'Apr_Sp_Targets'
 
+    AdGroupId = Column(Integer)
+    AdGroupName = Column(String(400))
     TargetId = Column(Integer)
     TargetingText = Column(String(400))
     TargetingType = Column(String(100))
@@ -189,6 +203,8 @@ class AprSpTargets(SpBase):
 
     def __init__(self, SnapDate, Country, json_report):
         ModelSpReports.__init__(self, SnapDate, Country, json_report)
+        self.AdGroupId = json_report.get('adGroupId', 0)
+        self.AdGroupName = json_report.get('adGroupName', '')
         self.TargetId = json_report.get('targetId', 0)
         self.TargetingText = json_report.get('targetingText', '')
         self.TargetingType = json_report.get('targetingType', '')
