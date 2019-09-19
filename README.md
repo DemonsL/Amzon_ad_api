@@ -2,4 +2,4 @@
 https://advertising.amazon.com/API/docs/v2/guides/get_started
 
 Required installation packages:
-    Requests, Sqlalchemy, PyMysql, APScheduler, Tornado
+    Requests, Sqlalchemy, PyMysql, APScheduler, Tornado, Falsk

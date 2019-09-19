@@ -60,9 +60,13 @@ def list_ads_ex(spon_type, ad_type):
     api_type = 'api_list_ex'
     return request_url(spon_type, ad_type, api_type)
 
+# @app.route('/v2/<spon_type>/<ad_type>/', methods=['POST', 'PUT'])
+# def update_ads(spon_type, ad_type):
+
+
 
 
 
 if __name__ == "__main__":
 
-    app.run()
+    app.run(host='0.0.0.0', port=6666)
