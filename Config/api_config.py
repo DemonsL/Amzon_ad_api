@@ -55,3 +55,60 @@ report_type = {
                     'attributedUnitsOrdered14dOtherSKU', 'attributedUnitsOrdered30dOtherSKU', 'attributedSales1dOtherSKU',
                     'attributedSales7dOtherSKU', 'attributedSales14dOtherSKU', 'attributedSales30dOtherSKU']
 }
+
+ad_api_type = {
+    'portfolios': ['Portfolios', {
+        'api_get': 'get_portfolio',
+        'api_get_ex': 'get_portfolio_ex',
+        'api_list': 'list_portfolios',
+        'api_list_ex': 'list_portfolios_ex'
+    }],
+    'campaigns': ['Campaigns', {
+        'api_get': 'get_campaign',
+        'api_get_ex': 'get_campaign_ex',
+        'api_list': 'list_campaigns',
+        'api_list_ex': 'list_campaigns_ex'
+    }],
+    'adGroups': ['AdGroups', {
+        'api_get': 'get_adgroup',
+        'api_get_ex': 'get_adgroup_ex',
+        'api_list': 'list_adgroups',
+        'api_list_ex': 'list_adgroups_ex'
+    }],
+    'productAds': ['ProductAds', {
+        'api_get': 'get_productad',
+        'api_get_ex': 'get_productad_ex',
+        'api_list': 'list_productads',
+        'api_list_ex': 'list_productads_ex'
+    }],
+    'targets': ['Targets', {
+        'api_get': 'get_targeting_clause',
+        'api_get_ex': 'get_targeting_clause_ex',
+        'api_list': 'list_targeting_clause',
+        'api_list_ex': 'list_targeting_clause_ex'
+    }],
+    'negativeTargets': ['Targets', {
+        'api_get': 'get_negative_targeting_clause',
+        'api_get_ex': 'get_negative_targeting_clause_ex',
+        'api_list': 'list_negative_targeting_clauses',
+        'api_list_ex': 'list_negative_targeting_clauses_ex'
+    }],
+    'keywords': ['Keywords', {
+        'api_get': 'get_biddable_keyword',
+        'api_get_ex': 'get_biddable_keyword_ex',
+        'api_list': 'list_biddable_keywords',
+        'api_list_ex': 'list_biddable_keywords_ex'
+    }],
+    'negativeKeywords': ['Keywords', {
+        'api_get': 'get_negative_keyword',
+        'api_get_ex': 'get_negative_keyword_ex',
+        'api_list': 'list_negative_keywords',
+        'api_list_ex': 'list_negative_keywords_ex'
+    }],
+    'campaignNegativeKeywords': ['Keywords', {
+        'api_get': 'get_campaign_negative_keyword',
+        'api_get_ex': 'get_campaign_negative_keyword_ex',
+        'api_list': 'list_campaign_negative_keywords',
+        'api_list_ex': 'list_campaign_negative_keywords_ex'
+    }]
+}
