@@ -2,6 +2,7 @@
 import sys
 sys.path.append('../')
 from Config.api_config import account, ad_api_type
+from AdApi.profiles import Profiles
 from AdApi.portfolios import Portfolios
 from AdApi.campaigns import Campaigns
 from AdApi.adgroups import AdGroups
@@ -62,6 +63,7 @@ def list_ads_ex(spon_type, ad_type):
 
 # @app.route('/v2/<spon_type>/<ad_type>/', methods=['POST', 'PUT'])
 # def update_ads(spon_type, ad_type):
+#     pass
 
 
 

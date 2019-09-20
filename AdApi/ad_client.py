@@ -38,14 +38,6 @@ class AdClient:
                               data = json.dumps(data))
         self._access_token = dict(resp.json()).get('access_token')
 
-    def list_profiles(self):
-        interface = 'profiles'
-        return self.excute_req(interface)
-
-    def get_profile(self, profile_id):
-        interface = 'profiles/{}'.format(profile_id)
-        return self.excute_req(interface)
-
     def excute_req(self, interface, method='GET', scope=None, payload=None):
         headers = {
             'Content-Type': 'application/json',

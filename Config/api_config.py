@@ -57,6 +57,10 @@ report_type = {
 }
 
 ad_api_type = {
+    'profiles': ['Profiles', {
+        'api_get': 'get_profile',
+        'api_list': 'list_profiles'
+    }],
     'portfolios': ['Portfolios', {
         'api_get': 'get_portfolio',
         'api_get_ex': 'get_portfolio_ex',
