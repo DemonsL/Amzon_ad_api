@@ -65,54 +65,80 @@ ad_api_type = {
         'api_get': 'get_portfolio',
         'api_get_ex': 'get_portfolio_ex',
         'api_list': 'list_portfolios',
-        'api_list_ex': 'list_portfolios_ex'
+        'api_list_ex': 'list_portfolios_ex',
+        'api_create': 'create_portfolios',
+        'api_update': 'update_portfolios'
     }],
     'campaigns': ['Campaigns', {
         'api_get': 'get_campaign',
         'api_get_ex': 'get_campaign_ex',
         'api_list': 'list_campaigns',
-        'api_list_ex': 'list_campaigns_ex'
+        'api_list_ex': 'list_campaigns_ex',
+        'api_create': 'create_campaigns',
+        'api_update': 'update_campaigns',
+        'api_delete': 'delete_campaign'
     }],
     'adGroups': ['AdGroups', {
         'api_get': 'get_adgroup',
         'api_get_ex': 'get_adgroup_ex',
         'api_list': 'list_adgroups',
-        'api_list_ex': 'list_adgroups_ex'
+        'api_list_ex': 'list_adgroups_ex',
+        'api_create': 'create_adgroups',
+        'api_update': 'update_adgroups',
+        'api_delete': 'delete_adgroup'
     }],
     'productAds': ['ProductAds', {
         'api_get': 'get_productad',
         'api_get_ex': 'get_productad_ex',
         'api_list': 'list_productads',
-        'api_list_ex': 'list_productads_ex'
+        'api_list_ex': 'list_productads_ex',
+        'api_create': 'create_productad',
+        'api_update': 'update_productad',
+        'api_delete': 'delete_productad'
     }],
     'targets': ['Targets', {
         'api_get': 'get_targeting_clause',
         'api_get_ex': 'get_targeting_clause_ex',
         'api_list': 'list_targeting_clause',
-        'api_list_ex': 'list_targeting_clause_ex'
+        'api_list_ex': 'list_targeting_clause_ex',
+        'api_create': 'create_targeting_clause',
+        'api_update': 'update_targeting_clause',
+        'api_delete': 'delete_targeting_clause'
     }],
     'negativeTargets': ['Targets', {
         'api_get': 'get_negative_targeting_clause',
         'api_get_ex': 'get_negative_targeting_clause_ex',
         'api_list': 'list_negative_targeting_clauses',
-        'api_list_ex': 'list_negative_targeting_clauses_ex'
+        'api_list_ex': 'list_negative_targeting_clauses_ex',
+        'api_create': 'create_negative_targeting_clauses',
+        'api_update': 'update_negative_targeting_clauses',
+        'api_delete': 'delete_negative_targeting_clause'
     }],
     'keywords': ['Keywords', {
         'api_get': 'get_biddable_keyword',
         'api_get_ex': 'get_biddable_keyword_ex',
         'api_list': 'list_biddable_keywords',
-        'api_list_ex': 'list_biddable_keywords_ex'
+        'api_list_ex': 'list_biddable_keywords_ex',
+        'api_create': 'create_biddable_keywords',
+        'api_update': 'update_biddable_keywords',
+        'api_delete': 'delete_biddable_keyword'
     }],
     'negativeKeywords': ['Keywords', {
         'api_get': 'get_negative_keyword',
         'api_get_ex': 'get_negative_keyword_ex',
         'api_list': 'list_negative_keywords',
-        'api_list_ex': 'list_negative_keywords_ex'
+        'api_list_ex': 'list_negative_keywords_ex',
+        'api_create': 'create_negative_keywords',
+        'api_update': 'update_negative_keywords',
+        'api_delete': 'delete_negative_keyword'
     }],
     'campaignNegativeKeywords': ['Keywords', {
         'api_get': 'get_campaign_negative_keyword',
         'api_get_ex': 'get_campaign_negative_keyword_ex',
         'api_list': 'list_campaign_negative_keywords',
-        'api_list_ex': 'list_campaign_negative_keywords_ex'
+        'api_list_ex': 'list_campaign_negative_keywords_ex',
+        'api_create': 'create_campaign_negative_keywords',
+        'api_update': 'update_campaign_negative_keywords',
+        'api_delete': 'delete_campaign_negative_keyword'
     }]
 }

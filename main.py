@@ -30,20 +30,28 @@ def request_url(spon_type, ad_type, api_type, ad_id=None):
     }
     ad_api = ad_api_type.get(ad_type)
     ad = set_token(eval(ad_api[0]))
-    if ad_id:
+    inter = ''
+    if ('get' in api_type) or ('delete' in api_type):
         if ad_type in ['campaigns', 'keywords']:
-            resp = eval('ad.{}(ad_id, params).text'.format(ad_api[1].get(api_type)))
+            inter = 'ad.{}(ad_id, params).text'
         else:
-            resp = eval('ad.{}(ad_id).text'.format(ad_api[1].get(api_type)))
-    else:
+            inter = 'ad.{}(ad_id).text'
+    if 'list' in api_type:
         for k, v in flask_req.args.items():
             params[k] = v
-        resp = eval('ad.{}(params).text'.format(ad_api[1].get(api_type)))
-    return resp
+            inter = 'ad.{}(params).text'
+    if ('create' in api_type) or ('update' in api_type):
+        payload = flask_req.form
+        params['payload'] = payload
+        inter = 'ad.{}(params).text'
+    return eval(inter.format(ad_api[1].get(api_type)))
 
-@app.route('/v2/<spon_type>/<ad_type>/<ad_id>/')
-def get_ad(spon_type, ad_type, ad_id):
-    api_type = 'api_get'
+@app.route('/v2/<spon_type>/<ad_type>/<ad_id>/', methods=['DELETE', 'GET'])
+def get_or_delete_ad(spon_type, ad_type, ad_id):
+    if flask_req.method == 'DELETE':
+        api_type = 'api_delete'
+    else:
+        api_type = 'api_get'
     return request_url(spon_type, ad_type, api_type, ad_id)
 
 @app.route('/v2/<spon_type>/<ad_type>/extended/<ad_id>/')
@@ -51,9 +59,14 @@ def get_ad_ex(spon_type, ad_type, ad_id):
     api_type = 'api_get_ex'
     return request_url(spon_type, ad_type, api_type, ad_id)
 
-@app.route('/v2/<spon_type>/<ad_type>/')
-def list_ads(spon_type, ad_type):
-    api_type = 'api_list'
+@app.route('/v2/<spon_type>/<ad_type>/', methods=['POST', 'PUT', 'GET'])
+def list_or_update_ads(spon_type, ad_type):
+    if flask_req.method == 'POST':
+        api_type = 'api_create'
+    elif flask_req.method == 'PUT':
+        api_type = 'api_update'
+    else:
+        api_type = 'api_list'
     return request_url(spon_type, ad_type, api_type)
 
 @app.route('/v2/<spon_type>/<ad_type>/extended/')
@@ -61,14 +74,9 @@ def list_ads_ex(spon_type, ad_type):
     api_type = 'api_list_ex'
     return request_url(spon_type, ad_type, api_type)
 
-# @app.route('/v2/<spon_type>/<ad_type>/', methods=['POST', 'PUT'])
-# def update_ads(spon_type, ad_type):
-#     pass
-
-
 
 
 
 if __name__ == "__main__":
 
-    app.run(host='0.0.0.0', port=6666)
+    app.run(host='0.0.0.0', port=7003)
