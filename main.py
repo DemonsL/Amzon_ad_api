@@ -39,7 +39,7 @@ def request_url(spon_type, ad_type, api_type, ad_id=None):
     if 'list' in api_type:
         for k, v in flask_req.args.items():
             params[k] = v
-            inter = 'ad.{}(params).text'
+        inter = 'ad.{}(params).text'
     if ('create' in api_type) or ('update' in api_type):
         payload = flask_req.form
         params['payload'] = payload
