@@ -24,10 +24,11 @@ def set_token(ad_type):
     ad.do_refresh_token()
     return ad
 
-def request_url(spon_type, ad_type, api_type, ad_id=None):
-    params = {
-        'spon': spon_type
-    }
+def request_url(ad_type, api_type, ad_id=None):
+    params = {}
+    if ad_type.find('/') != -1:
+        params['spon'] = ad_type.split('/')[0]
+        ad_type = ad_type.split('/')[1]
     ad_api = ad_api_type.get(ad_type)
     ad = set_token(eval(ad_api[0]))
     inter = ''
@@ -46,33 +47,33 @@ def request_url(spon_type, ad_type, api_type, ad_id=None):
         inter = 'ad.{}(params).text'
     return eval(inter.format(ad_api[1].get(api_type)))
 
-@app.route('/v2/<spon_type>/<ad_type>/<ad_id>/', methods=['DELETE', 'GET'])
-def get_or_delete_ad(spon_type, ad_type, ad_id):
+@app.route('/v2/<path:ad_type>/<int:ad_id>', methods=['DELETE', 'GET'])
+def get_or_delete_ad(ad_type, ad_id):
     if flask_req.method == 'DELETE':
         api_type = 'api_delete'
     else:
         api_type = 'api_get'
-    return request_url(spon_type, ad_type, api_type, ad_id)
+    return request_url(ad_type, api_type, ad_id)
 
-@app.route('/v2/<spon_type>/<ad_type>/extended/<ad_id>/')
-def get_ad_ex(spon_type, ad_type, ad_id):
+@app.route('/v2/<path:ad_type>/extended/<int:ad_id>')
+def get_ad_ex(ad_type, ad_id):
     api_type = 'api_get_ex'
-    return request_url(spon_type, ad_type, api_type, ad_id)
+    return request_url(ad_type, api_type, ad_id)
 
-@app.route('/v2/<spon_type>/<ad_type>/', methods=['POST', 'PUT', 'GET'])
-def list_or_update_ads(spon_type, ad_type):
+@app.route('/v2/<path:ad_type>', methods=['POST', 'PUT', 'GET'])
+def list_or_update_ads(ad_type):
     if flask_req.method == 'POST':
         api_type = 'api_create'
     elif flask_req.method == 'PUT':
         api_type = 'api_update'
     else:
         api_type = 'api_list'
-    return request_url(spon_type, ad_type, api_type)
+    return request_url(ad_type, api_type)
 
-@app.route('/v2/<spon_type>/<ad_type>/extended/')
-def list_ads_ex(spon_type, ad_type):
+@app.route('/v2/<path:ad_type>/extended')
+def list_ads_ex(ad_type):
     api_type = 'api_list_ex'
-    return request_url(spon_type, ad_type, api_type)
+    return request_url(ad_type, api_type)
 
 
 
