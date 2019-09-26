@@ -1,6 +1,7 @@
 # coding:utf-8
 import sys
 sys.path.append('../')
+import json
 from Config.api_config import account, ad_api_type
 from AdApi.profiles import Profiles
 from AdApi.portfolios import Portfolios
@@ -13,6 +14,8 @@ from flask import Flask, request as flask_req
 
 app = Flask(__name__)
 
+def resp_status(code, msg):
+    return {'code': code, 'msg': msg}
 
 def set_token(ad_type):
     client_id = account.get('client_id')
@@ -29,6 +32,8 @@ def request_url(ad_type, api_type, ad_id=None):
     if ad_type.find('/') != -1:
         params['spon'] = ad_type.split('/')[0]
         ad_type = ad_type.split('/')[1]
+    if flask_req.headers.get('ApiKey') != account.get('client_id'):
+        return resp_status(401, 'Request failed because user is not authenticated.')
     ad_api = ad_api_type.get(ad_type)
     ad = set_token(eval(ad_api[0]))
     inter = ''
@@ -45,7 +50,13 @@ def request_url(ad_type, api_type, ad_id=None):
         payload = flask_req.form
         params['payload'] = payload
         inter = 'ad.{}(params).text'
-    return eval(inter.format(ad_api[1].get(api_type)))
+    code = 200
+    try:
+        msg = json.loads(eval(inter.format(ad_api[1].get(api_type))))
+    except Exception as e:
+        code = 500
+        msg = e
+    return resp_status(code, msg)
 
 @app.route('/v2/<path:ad_type>/<int:ad_id>', methods=['DELETE', 'GET'])
 def get_or_delete_ad(ad_type, ad_id):
