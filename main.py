@@ -58,7 +58,7 @@ def request_url(ad_type, api_type, ad_id=None):
         msg = e
     return resp_status(code, msg)
 
-@app.route('/v2/<path:ad_type>/<int:ad_id>', methods=['DELETE', 'GET'])
+@app.route('/<path:ad_type>/<int:ad_id>', methods=['DELETE', 'GET'])
 def get_or_delete_ad(ad_type, ad_id):
     if flask_req.method == 'DELETE':
         api_type = 'api_delete'
@@ -66,12 +66,12 @@ def get_or_delete_ad(ad_type, ad_id):
         api_type = 'api_get'
     return request_url(ad_type, api_type, ad_id)
 
-@app.route('/v2/<path:ad_type>/extended/<int:ad_id>')
+@app.route('/<path:ad_type>/extended/<int:ad_id>')
 def get_ad_ex(ad_type, ad_id):
     api_type = 'api_get_ex'
     return request_url(ad_type, api_type, ad_id)
 
-@app.route('/v2/<path:ad_type>', methods=['POST', 'PUT', 'GET'])
+@app.route('/<path:ad_type>', methods=['POST', 'PUT', 'GET'])
 def list_or_update_ads(ad_type):
     if flask_req.method == 'POST':
         api_type = 'api_create'
@@ -81,7 +81,7 @@ def list_or_update_ads(ad_type):
         api_type = 'api_list'
     return request_url(ad_type, api_type)
 
-@app.route('/v2/<path:ad_type>/extended')
+@app.route('/<path:ad_type>/extended')
 def list_ads_ex(ad_type):
     api_type = 'api_list_ex'
     return request_url(ad_type, api_type)
