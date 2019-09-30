@@ -3,6 +3,7 @@ import sys
 sys.path.append('../')
 import json
 from Config.api_config import account, ad_api_type
+from AdApi.stores import Stores
 from AdApi.profiles import Profiles
 from AdApi.portfolios import Portfolios
 from AdApi.campaigns import Campaigns

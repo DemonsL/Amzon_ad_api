@@ -57,9 +57,14 @@ report_type = {
 }
 
 ad_api_type = {
+    'stores': ['Stores', {
+        'api_get': 'get_store',
+        'api_list': 'list_stores'
+    }],
     'profiles': ['Profiles', {
         'api_get': 'get_profile',
-        'api_list': 'list_profiles'
+        'api_list': 'list_profiles',
+        'api_update': 'update_profiles'
     }],
     'portfolios': ['Portfolios', {
         'api_get': 'get_portfolio',
