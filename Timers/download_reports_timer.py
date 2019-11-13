@@ -126,13 +126,14 @@ class DownloadReports:
         log.info('Report Marketplace: %s', params.get('mkp'))
         client.do_refresh_token()
         interval_day = 2
-        while interval_day < 32:    # 更新前30天内报告数据
-            report_date = datetime.datetime.now()
-            report_date -= datetime.timedelta(days=interval_day)
-            report_date = report_date.strftime('%Y%m%d')
-            log.info('Report Date: %s', report_date)
-            params['reportDate'] = str(report_date)
-            self.batch_download_reports(client, params)
+        while interval_day <= 32:    # 更新前30天内报告数据(由于订单的退换货原因每天数据不一致)
+            if interval_day < 9 or interval_day == 32:     # 只更新前7天和第前30天数据
+                report_date = datetime.datetime.now()
+                report_date -= datetime.timedelta(days=interval_day)
+                report_date = report_date.strftime('%Y%m%d')
+                log.info('Report Date: %s', report_date)
+                params['reportDate'] = str(report_date)
+                self.batch_download_reports(client, params)
             interval_day += 1
         log.info('Marketplace: %s', params.get('mkp'))
         log.info('Report download end!')
